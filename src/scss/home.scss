@@ -1,0 +1,18 @@
+.home-text-one {
+  transition: 700ms ease-out;
+}
+
+.home-text-two {
+  transition: 700ms ease-in-out;
+}
+
+.home-text-block {
+  position: absolute;
+
+  top: 43vh;
+  left: 27vw;
+
+  span {
+    display: block;
+  }
+}

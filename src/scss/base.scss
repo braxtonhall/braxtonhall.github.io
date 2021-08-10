@@ -37,6 +37,7 @@ button {
   top: 33vh;
   height: 34vh;
   right: 0;
+  z-index: 1;
 }
 
 .page-button-track {
@@ -49,7 +50,6 @@ button {
   position: absolute;
   height: 93%;
   width: 6.8%;
-  transition: 750ms cubic-bezier(0.57,0.35,0.54,1.15);
 }
 
 .page-button-position {
@@ -135,4 +135,8 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.fixed-transition {
+  transition: 750ms cubic-bezier(0.57,0.35,0.54,1.15);
 }

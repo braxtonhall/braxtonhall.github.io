@@ -1,5 +1,5 @@
 import React, {ReactElement} from "react";
-import {Page} from "../Types";
+import {PageKind} from "../../Types";
 
 const Preview = (props: PreviewProps): ReactElement => {
     // TODO one for each type, fade in and out, slide off when on home screen :)
@@ -10,7 +10,7 @@ const Preview = (props: PreviewProps): ReactElement => {
 };
 
 interface PreviewProps {
-    page: Page | "";
+    page: PageKind | "";
     home: boolean;
 }
 

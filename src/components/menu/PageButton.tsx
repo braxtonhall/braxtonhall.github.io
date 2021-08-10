@@ -1,8 +1,7 @@
 import {Link} from "react-router-dom";
 import React, {ReactElement} from "react";
-import "../scss/base.scss"
-import {randomInt} from "../util/Util";
-import {Page} from "../Types";
+import {randomInt} from "../../util/Util";
+import {PageKind} from "../../Types";
 
 const PageButton = (props: PageButtonProps): ReactElement => {
     const {to, text, leftOffset, home, setPreview, clearPreview} = props;
@@ -33,9 +32,9 @@ const HomeButton = (props: HomeButtonProps) => {
     const left = home ? "110%" : "36vw";
 
     return <div className="page-button-track">
-        <div className="home-button-position" style={{left}}>
+        <div className="home-button-position fixed-transition" style={{left}}>
             <div className="page-button-centerer">
-                <Link to={Page.HOME} style={{color: "inherit"}}>
+                <Link to={PageKind.HOME} style={{color: "inherit"}}>
                     <button className="home-button center"
                             onMouseEnter={setPreview}
                             onMouseLeave={clearPreview}
