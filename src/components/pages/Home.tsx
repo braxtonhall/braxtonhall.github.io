@@ -17,8 +17,8 @@ const Home = (props: HomeProps): ReactElement => {
     });
 
     return <p className="home-text-block">
-        <span className={`home-text-one ${className}`}>Hi. I'm Braxton.</span>
-        <span className={`home-text-two ${className}`}>{text.current}</span>
+        <span className={`home-text one ${className}`}>Hi. I'm Braxton.</span>
+        <span className={`home-text two ${className}`}>{text.current}</span>
     </p>;
 };
 

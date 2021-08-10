@@ -66,3 +66,30 @@
     opacity: 1;
   }
 }
+
+.contact-text {
+  display: block;
+
+  &.one {
+    transition: 600ms ease-out;
+  }
+  &.two {
+    transition: 700ms ease-in-out;
+    margin-left: 2vw;
+  }
+  &.three {
+    transition: 650ms ease-in;
+    margin-left: 4vw;
+  }
+  &.four {
+    transition: 650ms ease-out;
+    margin-left: 3vw;
+  }
+}
+
+.contact-text-block {
+  position: absolute;
+
+  top: 38vh;
+  left: 27vw;
+}

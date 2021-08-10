@@ -6,7 +6,7 @@ import {ContactButton} from "./ContactButton";
 const Contact = (props: ContactProps) => {
     const {page} = props;
     const visible = page === PageKind.CONTACT;
-
+    const className = visible ? "opaque" : "transparent no-select";
 
     return <React.Fragment>
         <div className="contact-palette">
@@ -29,6 +29,12 @@ const Contact = (props: ContactProps) => {
                            offset={2}
             />
         </div>
+        <p className="contact-text-block">
+            <span className={`contact-text one ${className}`}>That's me to the right if you're trying to spot me in person!<br/><br/></span>
+            <span className={`contact-text two ${className}`}>Feel free to send me a message about anything,</span>
+            <span className={`contact-text three ${className}`}>whether it be work inquiries or a "Hello!"</span>
+            <span className={`contact-text four ${className}`}>using the usual links to the left.</span>
+        </p>
         <Me visible={visible}/>
     </React.Fragment>;
 };
