@@ -13,19 +13,19 @@ const Menu = (props: MenuProps): ReactElement => {
 
     return <React.Fragment>
         <div className="menu">
-            <PageButton to={PageKind.RESUME} text={"Résumé"} home={home} leftOffset={4}
+            <PageButton to={PageKind.RESUME} text={"Résumé"} home={home} offset={4}
                         setPreview={setPreview(PageKind.RESUME)}
                         clearPreview={clearPreview}
             />
-            <PageButton to={PageKind.PROJECTS} text={"Projects"} home={home} leftOffset={1}
+            <PageButton to={PageKind.PROJECTS} text={"Projects"} home={home} offset={1}
                         setPreview={setPreview(PageKind.PROJECTS)}
                         clearPreview={clearPreview}
             />
-            <PageButton to={PageKind.CONTACT} text={"Contact"} home={home} leftOffset={3}
+            <PageButton to={PageKind.CONTACT} text={"Contact"} home={home} offset={3}
                         setPreview={setPreview(PageKind.CONTACT)}
                         clearPreview={clearPreview}
             />
-            <PageButton to={PageKind.OTHER} text={"Other"} home={home} leftOffset={0}
+            <PageButton to={PageKind.OTHER} text={"Other"} home={home} offset={0}
                         setPreview={setPreview(PageKind.OTHER)}
                         clearPreview={clearPreview}
             />

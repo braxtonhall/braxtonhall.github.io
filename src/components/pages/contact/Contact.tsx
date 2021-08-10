@@ -9,28 +9,33 @@ const Contact = (props: ContactProps) => {
 
 
     return <React.Fragment>
-        <ContactButton name="gmail"
-                       link="mailto:braxtonhall@alumni.ubc.ca"
-                       icon="gmail.png"
-                       visible={visible}
-        />
-        <ContactButton name="github"
-                       link="https://github.com/braxtonhall/"
-                       icon="github.png"
-                       visible={visible}
-        />
-        <ContactButton name="linkedin"
-                       link="https://www.linkedin.com/in/braxton-hall-b49718170/"
-                       icon="linkedin.png"
-                       visible={visible}
-        />
+        <div className="contact-palette">
+            <ContactButton name="Email"
+                           link="mailto:braxtonhall@alumni.ubc.ca"
+                           icon="gmail.png"
+                           visible={visible}
+                           offset={1}
+            />
+            <ContactButton name="GitHub"
+                           link="https://github.com/braxtonhall/"
+                           icon="github.png"
+                           visible={visible}
+                           offset={0}
+            />
+            <ContactButton name="LinkedIn"
+                           link="https://www.linkedin.com/in/braxton-hall-b49718170/"
+                           icon="linkedin.png"
+                           visible={visible}
+                           offset={2}
+            />
+        </div>
         <Me visible={visible}/>
     </React.Fragment>;
 };
 
-const Me = (props: {visible: boolean}) => {
+const Me = (props: { visible: boolean }) => {
     const {visible} = props;
-    const right = visible ? "15vw" : "-15vw";
+    const right = visible ? "15vw" : "-17vw";
     return <div
         className="hong-kong fixed-transition"
         style={{backgroundImage: "url(/img/hongkong2018.jpg)", right}}

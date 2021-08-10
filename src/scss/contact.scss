@@ -1,3 +1,5 @@
+@import "./constants";
+
 .hong-kong {
   position: absolute;
   height: 100%;
@@ -5,4 +7,62 @@
   width: 15%;
   background-size: auto 100%;
   background-position: center;
+}
+
+.contact-button {
+  background-color: $black;
+  transition: 80ms ease-in;
+  display:block;
+  width: 87%;
+  height: 87%;
+  outline: none;
+  border: none;
+  position: absolute;
+  alignment: center;
+  font: 2vw "Courier New", Futura, sans-serif;
+  font-style: italic;
+  background-size: contain;
+
+  &:hover {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:active {
+    width: 74%;
+    height: 74%;
+  }
+}
+
+.contact-button-position {
+  position: absolute;
+  height: 93%;
+  width: 17%;
+}
+
+.contact-palette {
+  table-layout: fixed;
+  display: table;
+  box-sizing: border-box;
+  position: absolute;
+  width: 20vw;
+  top: 36vh;
+  height: 20.4vh;
+  left: 0;
+  z-index: 1;
+}
+
+.contact-button-preview {
+  transition: 80ms ease-in;
+  position: absolute;
+  font: 1.5vw "Courier New", Futura, sans-serif;
+  top: 50%;
+  left: 120%;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  opacity: 0;
+
+  &.visible {
+    opacity: 1;
+  }
 }

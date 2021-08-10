@@ -1,6 +1,4 @@
-$black: rgb(48, 48, 48);
-$white: rgb(242, 242, 242);
-$backgroundGrey: #f5f5f5;
+@import "./constants";
 
 body {
   overflow-y: hidden;
@@ -107,7 +105,7 @@ button {
   border: none;
   position: absolute;
   alignment: center;
-  font: 2vw "Courier New", Futura, sans-serif;
+  font: 2vw "Courier New", Futura, sans-serif; // TODO remove view width
   font-style: italic;
 
   &:hover {
