@@ -1,0 +1,138 @@
+$black: rgb(48, 48, 48);
+$white: rgb(242, 242, 242);
+$backgroundGrey: #f5f5f5;
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.background {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 63.5%;
+  background: $backgroundGrey;
+  top: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.opaque {
+  opacity: 1;
+}
+
+.menu {
+  table-layout: fixed;
+  display: table;
+  box-sizing: border-box;
+  position: absolute;
+  width: 50vw;
+  top: 33vh;
+  height: 34vh;
+  right: 0;
+}
+
+.page-button-track {
+  display: table-row;
+  position: relative;
+  width: 100%;
+}
+
+.home-button-position {
+  position: absolute;
+  height: 93%;
+  width: 6.8%;
+  transition: 750ms cubic-bezier(0.57,0.35,0.54,1.15);
+}
+
+.page-button-position {
+  position: absolute;
+  width: 33%;
+  height: 93%;
+}
+
+.page-button-centerer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.home-button {
+  background-color: $black;
+  transition: 80ms ease-in;
+  display:block;
+  width: 87%;
+  height: 87%;
+  outline: none;
+  border: none;
+  position: absolute;
+  alignment: center;
+  font: 2vw "Courier New", Futura, sans-serif;
+  font-style: italic;
+
+  &:hover {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:active {
+    width: 74%;
+    height: 74%;
+  }
+}
+
+.page-button {
+  background-color: $black;
+  text-align: right;
+  transition: 80ms ease-in;
+  width: 97%;
+  height: 87%;
+  outline: none;
+  border: none;
+  position: absolute;
+  alignment: center;
+  font: 2vw "Courier New", Futura, sans-serif;
+  font-style: italic;
+
+  &:hover {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:active {
+    width: 94%;
+    height: 74%;
+  }
+
+  span {
+    transition: 700ms;
+    color: $black;
+    &.home {
+      color: $white;
+    }
+  }
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
