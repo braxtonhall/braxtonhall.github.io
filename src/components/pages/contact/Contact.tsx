@@ -41,10 +41,10 @@ const Contact = (props: ContactProps) => {
 
 const Me = (props: { visible: boolean }) => {
     const {visible} = props;
-    const right = visible ? "15vw" : "-17vw";
+    const left = visible ? "65vw" : "117vw";
     return <div
         className="hong-kong fixed-transition"
-        style={{backgroundImage: "url(/img/hongkong2018.jpg)", right}}
+        style={{backgroundImage: "url(/img/hongkong2018.jpg)", left}}
     />;
 }
 

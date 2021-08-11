@@ -1,5 +1,5 @@
 import React, {ReactElement, useState} from "react";
-import {randomTransition} from "../../../util/Util";
+import {clickLink, randomTransition} from "../../../util/Util";
 
 const ContactButton = (props: ContactButtonProps): ReactElement => {
     const {name, link, icon, visible, offset} = props;
@@ -23,11 +23,6 @@ const ContactButton = (props: ContactButtonProps): ReactElement => {
             <ContactButtonPreview name={name} visible={hover && visible}/>
         </div>
     </div>;
-};
-
-const clickLink = (link: string) => (event: React.MouseEvent) => {
-    event.preventDefault();
-    window.open(link, "_blank");
 };
 
 const ContactButtonPreview = (props: ContactButtonPreviewProps) => {

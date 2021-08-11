@@ -1,0 +1,51 @@
+.projects-container {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+
+  position: absolute;
+  .projects {
+    width: 50vw;
+
+
+    top: 0;
+
+    position: absolute;
+    transition: 650ms cubic-bezier(.5,.5,.41,.88);
+    left: 18vw;
+
+    .entry {
+      width: 100%;
+      margin-bottom: 2em;
+      margin-top: 2em;
+
+      .name {
+        font: 3vw "Courier New", Futura, sans-serif;
+      }
+
+      .entry-details {
+        display: flex;
+
+        .left {
+          width: 40%;
+          float: left;
+          .technologies {
+            font-style: italic;
+          }
+          span {
+            display: block;
+            margin-bottom: 0.5em;
+          }
+        }
+
+        .description {
+          font-size: 1.5vw;
+          width: 60%;
+          float: right;
+        }
+      }
+    }
+  }
+}
+

@@ -22,6 +22,7 @@
   font: 2vw "Courier New", Futura, sans-serif;
   font-style: italic;
   background-size: contain;
+  pointer-events: auto;
 
   &:hover {
     width: 100%;
@@ -50,6 +51,7 @@
   height: 20.4vh;
   left: 0;
   z-index: 1;
+  pointer-events: none;
 }
 
 .contact-button-preview {
