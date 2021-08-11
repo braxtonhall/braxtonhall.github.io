@@ -108,7 +108,7 @@ button {
   border: none;
   position: absolute;
   alignment: center;
-  font: 2vw "Courier New", Futura, sans-serif; // TODO remove view width
+  font: 2vw "Courier New", Futura, sans-serif;
   font-style: italic;
   pointer-events: auto;
 
@@ -162,4 +162,19 @@ button {
       display: none;
     }
   }
+}
+
+.preview-container {
+  position: absolute;
+  height: 20vh;
+  width: 35vh;
+  right: 0;
+  bottom: 7vh;
+}
+
+.preview-name {
+  position: absolute;
+  font: 15vh "Courier New", Futura, sans-serif;
+  font-style: italic;
+  transition: 80ms ease-in;
 }

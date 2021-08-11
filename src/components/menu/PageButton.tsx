@@ -15,6 +15,7 @@ const PageButton = (props: PageButtonProps): ReactElement => {
                     <button className="page-button no-select center"
                             onMouseEnter={setPreview}
                             onMouseLeave={clearPreview}
+                            onClick={clearPreview}
                     >
                         <span className={home ? "home" : ""}>
                             {text}
@@ -36,8 +37,9 @@ const HomeButton = (props: HomeButtonProps) => {
             <div className="page-button-centerer">
                 <Link to={PageKind.HOME}>
                     <SquareButton className="home-button"
-                            onMouseEnter={setPreview}
-                            onMouseLeave={clearPreview}
+                                  onMouseEnter={setPreview}
+                                  onMouseLeave={clearPreview}
+                                  onClick={clearPreview}
                     />
                 </Link>
             </div>

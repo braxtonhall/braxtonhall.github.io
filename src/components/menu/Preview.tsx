@@ -1,13 +1,26 @@
 import React, {ReactElement} from "react";
 import {PageKind} from "../../Types";
 
-const Preview = (props: PreviewProps): ReactElement => {
-    // TODO one for each type, fade in and out, slide off when on home screen :)
-    const {page, home} = props;
-    return <div>
-        <h1>{page}</h1>
-    </div>
-};
+const Preview = (props: PreviewProps): ReactElement =>
+    <div className="preview-container no-select no-touch">
+        <PreviewName {...props} target={PageKind.HOME} name={"Home"}/>
+        <PreviewName {...props} target={PageKind.RESUME} name={"Résumé"}/>
+        <PreviewName {...props} target={PageKind.PROJECTS} name={"Projects"}/>
+        <PreviewName {...props} target={PageKind.CONTACT} name={"Contact"}/>
+        <PreviewName {...props} target={PageKind.OTHER} name={"Other"}/>
+    </div>;
+
+const PreviewName = (props: PreviewNameProps): ReactElement => {
+    const {page, home, target, name} = props;
+    const visible = !home && (page === target);
+    const className = visible ? "opaque" : "transparent";
+    return <span className={`preview-name ${className}`}>{name}</span>
+}
+
+interface PreviewNameProps extends PreviewProps {
+    target: PageKind;
+    name: string;
+}
 
 interface PreviewProps {
     page: PageKind | "";
