@@ -10,19 +10,9 @@
 }
 
 .contact-button {
-  background-color: $black;
-  transition: 80ms ease-in;
-  display:block;
   width: 87%;
   height: 87%;
-  outline: none;
-  border: none;
-  position: absolute;
-  alignment: center;
-  font: 2vw "Courier New", Futura, sans-serif;
-  font-style: italic;
-  background-size: contain;
-  pointer-events: auto;
+
 
   &:hover {
     width: 100%;

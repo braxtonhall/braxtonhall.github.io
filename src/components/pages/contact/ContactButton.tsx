@@ -1,5 +1,6 @@
 import React, {ReactElement, useState} from "react";
 import {clickLink, randomTransition} from "../../../util/Util";
+import {SquareButton} from "../../SquareButton";
 
 const ContactButton = (props: ContactButtonProps): ReactElement => {
     const {name, link, icon, visible, offset} = props;
@@ -13,7 +14,7 @@ const ContactButton = (props: ContactButtonProps): ReactElement => {
         <div className="contact-button-position" style={{right, transition}}>
             <div className="page-button-centerer">
                 <a href={link} onClick={clickLink(link)}>
-                    <button className="contact-button center"
+                    <SquareButton className="contact-button"
                             style={{backgroundImage}}
                             onMouseLeave={() => setHover(false)}
                             onMouseEnter={() => setHover(true)}

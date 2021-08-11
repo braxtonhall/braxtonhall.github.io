@@ -2,6 +2,7 @@ import {Link} from "react-router-dom";
 import React, {ReactElement} from "react";
 import {randomTransition} from "../../util/Util";
 import {PageKind} from "../../Types";
+import {SquareButton} from "../SquareButton";
 
 const PageButton = (props: PageButtonProps): ReactElement => {
     const {to, text, offset, home, setPreview, clearPreview} = props;
@@ -34,7 +35,7 @@ const HomeButton = (props: HomeButtonProps) => {
         <div className="home-button-position fixed-transition" style={{left}}>
             <div className="page-button-centerer">
                 <Link to={PageKind.HOME}>
-                    <button className="home-button center"
+                    <SquareButton className="home-button"
                             onMouseEnter={setPreview}
                             onMouseLeave={clearPreview}
                     />
