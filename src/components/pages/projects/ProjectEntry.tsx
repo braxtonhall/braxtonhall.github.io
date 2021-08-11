@@ -1,6 +1,7 @@
 import {Entry} from "./Entries";
 import {ReactElement} from "react";
 import {clickLink} from "../../../util/Util";
+import {ProjectPicture} from "./ProjectPicture";
 
 const ProjectEntry = (props: ProjectEntryProps): ReactElement => {
     const {entry} = props;
@@ -15,8 +16,9 @@ const ProjectEntry = (props: ProjectEntryProps): ReactElement => {
             </div>
             <span className="description">{description}</span>
         </div>
+        {pictures.map(link => <ProjectPicture link={link}/>)}
     </div>;
-};
+}; // TODO instead use a button that has the "external link" logo
 
 interface ProjectEntryProps {
     entry: Entry;

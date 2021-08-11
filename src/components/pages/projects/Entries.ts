@@ -14,7 +14,10 @@ const NthPass: Entry = {
     end: "Dec 2020",
     technologies: ["TypeScript", "Racket", "React.js", "Express"],
     description: "NthPass is an interactive visualization of the implicit graph created by a multi-pass compiler. Here I built the API and Frontend of the application.",
-    pictures: [],
+    pictures: [
+        "/img/compiler-viz/overview.png",
+        // "/img/compiler-viz/detail.png",
+    ],
     link: "https://se.cs.ubc.ca/compiler-viz",
 };
 
@@ -22,17 +25,21 @@ const LivelyRecorder: Entry = {
     description: "Lively Recorder for Confluence Cloud is a video recording and embedding tool of which I was the sole owner. It went on to win the second place $43,000 prize at Atlassian's Codegeist 2021.",
     end: "Jul 2020",
     name: "Lively Recorder",
-    pictures: [],
+    pictures: [
+        "/img/recorder/recorder.png",
+    ],
     start: "May 2020",
     technologies: ["Java", "TypeScript", "AWS"],
     link: "https://devpost.com/software/lively-recorder-for-confluence-audio-video-screen",
 };
 
 const Surface: Entry = {
-    description: "Surface is a endless platforming video game, where I built the particle, collision and state transition systems of the underlying game engine.",
+    description: "Surface is an endless platforming video game, where I built the particle, collision and state transition systems of the underlying game engine.",
     end: "Dec 2019",
     name: "Surface",
-    pictures: [],
+    pictures: [
+        "/img/surface/shine.png",
+    ],
     start: "Sep 2019",
     technologies: ["C++", "OpenGL"],
 };
@@ -43,17 +50,22 @@ const CodeShovel: Entry = {
     start: "Aug 2019",
     end: "Nov 2019",
     technologies: ["Java", "TypeScript", "Python", "Ruby"],
-    pictures: [],
+    pictures: [
+        // "/img/codeshovel/welcome.png",
+        "/img/codeshovel/changes.png",
+    ],
     link: "https://se.cs.ubc.ca/CodeShovel",
 };
 
 const Fermata: Entry = {
     name: "Fermata",
-    description: "Fermata is a fun program that can turn a git history into an original composition, based on the commit habits of the contributors. I was lucky to collaborate with musicians to refine its musicality",
+    description: "Fermata is a fun program that can turn a git history into an original composition, based on the commit habits of the contributors. I was lucky to collaborate with musicians to refine its musicality.",
     start: "Oct 2018",
     end: "Nov 2018",
     technologies: ["Java", "JavaScript", "git", "jMusic"],
-    pictures: [],
+    pictures: [
+        "/img/fermata/metroxe.png",
+    ],
     link: "https://youtu.be/zDikgBV_XS4",
 };
 
