@@ -19,16 +19,6 @@ const seasick: PlaylistInfo = {
 const PLAYLISTS: PlaylistInfo[] = [
     Math101,
     seasick,
-    Math101,
-    seasick,
-    Math101,
-    seasick,
-    Math101,
-    seasick,
-    Math101,
-    seasick,
-    Math101,
-    seasick,
 ];
 
 export {PLAYLISTS};
