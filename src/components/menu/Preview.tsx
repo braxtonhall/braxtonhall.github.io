@@ -1,5 +1,5 @@
 import React, {ReactElement} from "react";
-import {PageKind} from "../../Types";
+import {PageKind} from "../pages/Page";
 
 const Preview = (props: PreviewProps): ReactElement =>
     <div className="preview-container no-select no-touch">

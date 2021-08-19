@@ -1,7 +1,7 @@
 import React, {ReactElement, useState} from "react";
-import {PageKind} from "../../Types";
 import {HomeButton, PageButton} from "./PageButton";
 import {Preview} from "./Preview";
+import {PageKind} from "../pages/Page";
 
 const Menu = (props: MenuProps): ReactElement => {
     const {home} = props;

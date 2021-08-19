@@ -1,6 +1,5 @@
 import {ReactElement, useEffect, useRef} from "react";
-import {PageProps} from "./Page";
-import {PageKind} from "../../Types";
+import {PageKind, PageProps} from "./Page";
 import {randomInt} from "../../util/Util";
 
 const Home = (props: HomeProps): ReactElement => {

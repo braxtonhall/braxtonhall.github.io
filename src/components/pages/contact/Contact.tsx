@@ -1,6 +1,5 @@
 import React from "react";
-import {PageProps} from "../Page";
-import {PageKind} from "../../../Types";
+import {PageKind, PageProps} from "../Page";
 import {ContactButton} from "./ContactButton";
 
 const Contact = (props: ContactProps) => {

@@ -1,12 +1,13 @@
 import {Link} from "react-router-dom";
 import React, {ReactElement} from "react";
 import {randomTransition} from "../../util/Util";
-import {PageKind} from "../../Types";
 import {SquareButton} from "../SquareButton";
+import {PageKind} from "../pages/Page";
 
 const PageButton = (props: PageButtonProps): ReactElement => {
     const {to, text, offset, home, setPreview, clearPreview} = props;
     const left = ((2 * offset) + (home ? 0 : 38)) + "vw";
+    // const left = (home ? (2 * offset) : ((0.5 * offset) + 38)) + "vw";
     const transition = randomTransition(700, 800);
     return <div className="page-button-track">
         <div className="page-button-position" style={{left, transition}}>
@@ -31,6 +32,7 @@ const HomeButton = (props: HomeButtonProps) => {
     const {home, setPreview, clearPreview} = props;
 
     const left = home ? "110%" : "36vw";
+    // const left = home ? "110%" : "39vw";
 
     return <div className="page-button-track">
         <div className="home-button-position fixed-transition" style={{left}}>
