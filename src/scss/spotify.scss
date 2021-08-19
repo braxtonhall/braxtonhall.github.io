@@ -13,7 +13,8 @@
         overflow: hidden;
       }
       .spotify-img {
-        width: 100%;
+        min-width: 100%;
+        max-height: 100%;
         transition: 0.2s;
         &:hover {
           cursor: pointer;
@@ -23,7 +24,7 @@
 
       position: absolute;
       width: 10vw;
-      left: 15vw;
+      // left: 15vw;
     }
   }
 

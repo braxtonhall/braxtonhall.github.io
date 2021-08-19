@@ -40,9 +40,10 @@ const Contact = (props: ContactProps) => {
 
 const Me = (props: { visible: boolean }) => {
     const {visible} = props;
-    const left = visible ? "65vw" : "117vw";
+    const left = visible ? "65vw" : "110vw";
+    const className = visible ? "opaque" : "transparent no-select no-touch";
     return <div
-        className="hong-kong fixed-transition"
+        className={`hong-kong fixed-transition ${className}`}
         style={{backgroundImage: "url(/img/hongkong2018.jpg)", left}}
     />;
 }

@@ -23,8 +23,9 @@ const SpotifyPalette = (props: { images: string[], onClick: (index: number) => v
     const {images, onClick, visible} = props;
     const className = visible ? "opaque" : "transparent no-select";
     const containerClassName = visible ? "" : "hidden-scrolling no-touch";
+    const right = visible ? "75vw" : "120vw";
     return <div className={`spotify-palette-container embedded-scrolling ${containerClassName}`}>
-        <div className={`spotify-palette fixed-transition ${className}`}>
+        <div className={`spotify-palette fixed-transition ${className}`} style={{right}}>
             {images.map((image, index) => <SpotifyImage image={image} onClick={() => onClick(index)}/>)}
         </div>
     </div>;
