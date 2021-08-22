@@ -55,7 +55,7 @@ const callHimBB: PlaylistInfo = {
 const butImSoLittle: PlaylistInfo = {
     playlistId: "5nuS0DNECM4EO2Kc2eweTN",
     imageLink: "/img/playlists/butImSoLittle.jpeg",
-    description: "a little girls asked me if I had any children. I said no. she asked me if I had any grandchildren. I said no. I asked her if she had any children. \"but I'm so little!\" she exclaimed. songs from a playlist exchange with Sunny. the prompt was \"lonely summer.\"",
+    description: "a little girl asked me if I had any children. I said no. she asked me if I had any grandchildren. I said no. I asked her if she had any children. \"but I'm so little!\" she exclaimed. songs from a playlist exchange with Sunny. the prompt was \"lonely summer.\"",
 };
 
 const thanks: PlaylistInfo = {
