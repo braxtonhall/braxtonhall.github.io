@@ -13,8 +13,8 @@ const Spotify = (props: SpotifyProps): ReactElement => {
         {PLAYLISTS.map((p, i) =>
             <React.Fragment>
                 <SpotifyPlaylist className="playlist" visible={visible && playlistIndex === i} playlistId={p.playlistId}
-                                 title={p.playlistId}/>
-                <SpotifyPlaylistCopy visible={visible && playlistIndex === i} text={p.description}/>
+                                 title={p.playlistId} key={i}/>
+                <SpotifyPlaylistCopy visible={visible && playlistIndex === i} text={p.description} key={i}/>
             </React.Fragment>)}
     </div>;
 };
@@ -26,7 +26,8 @@ const SpotifyPalette = (props: { images: string[], onClick: (index: number) => v
     const right = visible ? "75vw" : "120vw";
     return <div className={`spotify-palette-container embedded-scrolling ${containerClassName}`}>
         <div className={`spotify-palette fixed-transition ${className}`} style={{right}}>
-            {images.map((image, index) => <SpotifyImage image={image} onClick={() => onClick(index)}/>)}
+            {images.map((image, index) =>
+                <SpotifyImage image={image} key={index} onClick={() => onClick(index)}/>)}
         </div>
     </div>;
 };

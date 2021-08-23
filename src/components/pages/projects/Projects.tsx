@@ -10,7 +10,7 @@ const Projects = (props: ProjectsProps): ReactElement => {
     const containerClassName = visible ? "" : "hidden-scrolling no-touch";
     return <div className={`projects-container embedded-scrolling ${containerClassName}`}>
         <div className={`projects fixed-transition ${className}`}>
-            {ENTRIES.map((entry) => <ProjectEntry entry={entry}/>)}
+            {ENTRIES.map((entry, i) => <ProjectEntry entry={entry} key={i}/>)}
         </div>
     </div>;
 }

@@ -22,7 +22,7 @@ const ProjectEntry = (props: ProjectEntryProps): ReactElement => {
             </div>
             <span className="description">{description}</span>
         </div>
-        {pictures.map(link => <ProjectPicture link={link}/>)}
+        {pictures.map((link, i) => <ProjectPicture link={link} key={i}/>)}
     </div>;
 };
 

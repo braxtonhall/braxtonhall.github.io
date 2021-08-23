@@ -9,6 +9,7 @@ import {Home} from "./components/pages/Home";
 import {Projects} from "./components/pages/projects/Projects";
 import {NotFound} from "./components/pages/NotFound";
 import {Other} from "./components/pages/other/Other";
+import {Resume} from "./components/pages/resume/Resume";
 
 const App = (): ReactElement => {
     return (
@@ -37,10 +38,6 @@ const LocationApp = () => {
         <NotFound page={page}/>
     </React.Fragment>;
 };
-
-const Resume = (props: PageProps) => <NotDone page={props.page} targetPage={PageKind.RESUME}/>;
-const NotDone = (props: {page: string, targetPage: string}) =>
-    props.page === props.targetPage ? <span>I haven't made {props.targetPage} yet. Please go away.</span> : <div/>;
 
 
 const selectPage = (path: string): PageKind =>
