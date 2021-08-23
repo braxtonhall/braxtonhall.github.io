@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Switch, useLocation,} from "react-router
 import {Menu} from "./components/menu/Menu";
 import {Background} from "./components/Background";
 import {Contact} from "./components/pages/contact/Contact";
-import {PageKind, PageProps} from "./components/pages/Page";
+import {PageKind} from "./components/pages/Page";
 import {Home} from "./components/pages/Home";
 import {Projects} from "./components/pages/projects/Projects";
 import {NotFound} from "./components/pages/NotFound";

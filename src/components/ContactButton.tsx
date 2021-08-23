@@ -1,9 +1,9 @@
 import React, {ReactElement, useState} from "react";
-import {clickLink, randomTransition} from "../../../util/Util";
-import {SquareButton} from "../../SquareButton";
+import {randomTransition} from "../util/Util";
+import {SquareButton} from "./SquareButton";
 
 const ContactButton = (props: ContactButtonProps): ReactElement => {
-    const {name, link, icon, visible, offset} = props;
+    const {name, link, icon, visible, offset, download} = props;
     const [hover, setHover] = useState(false);
 
     const right = (offset + (visible ? 0 : 38)) + "vw";
@@ -13,7 +13,7 @@ const ContactButton = (props: ContactButtonProps): ReactElement => {
     return <div className="page-button-track">
         <div className="contact-button-position" style={{right, transition}}>
             <div className="page-button-centerer">
-                <a href={link} onClick={clickLink(link)}>
+                <a href={link} target="_blank" rel="noreferrer" download={download}>
                     <SquareButton className="contact-button"
                             style={{backgroundImage}}
                             onMouseLeave={() => setHover(false)}
@@ -38,6 +38,7 @@ interface ContactButtonProps {
     icon: string;
     visible: boolean;
     offset: number;
+    download?: string;
 }
 
 interface ContactButtonPreviewProps {

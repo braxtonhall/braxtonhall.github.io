@@ -1,6 +1,5 @@
 import {Entry} from "./Entries";
 import {ReactElement} from "react";
-import {clickLink} from "../../../util/Util";
 import {ProjectPicture} from "./ProjectPicture";
 import {SquareButton} from "../../SquareButton";
 
@@ -15,7 +14,7 @@ const ProjectEntry = (props: ProjectEntryProps): ReactElement => {
                 <span className="technologies">{technologies.join(", ")}</span>
                 <span className="date">{`${start}-${end}`}</span>
                 {link ?
-                    <a href={link} onClick={clickLink(link)}>
+                    <a href={link} target="_blank" rel="noreferrer">
                         <SquareButton className="visit-button" style={{backgroundImage}}/>
                     </a> :
                     ""}

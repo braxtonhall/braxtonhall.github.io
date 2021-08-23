@@ -11,10 +11,10 @@ const Spotify = (props: SpotifyProps): ReactElement => {
     return <div className="spotify-container">
         <SpotifyPalette images={PLAYLISTS.map(p => p.imageLink)} onClick={setPlaylistIndex} visible={visible}/>
         {PLAYLISTS.map((p, i) =>
-            <React.Fragment>
+            <React.Fragment key={i}>
                 <SpotifyPlaylist className="playlist" visible={visible && playlistIndex === i} playlistId={p.playlistId}
-                                 title={p.playlistId} key={i}/>
-                <SpotifyPlaylistCopy visible={visible && playlistIndex === i} text={p.description} key={i}/>
+                                 title={p.playlistId}/>
+                <SpotifyPlaylistCopy visible={visible && playlistIndex === i} text={p.description}/>
             </React.Fragment>)}
     </div>;
 };

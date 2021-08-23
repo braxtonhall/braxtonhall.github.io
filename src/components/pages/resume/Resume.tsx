@@ -1,6 +1,7 @@
 import React, {ReactElement, useState} from "react";
 import {PageKind, PageProps} from "../Page";
 import {Document, Page, pdfjs} from "react-pdf";
+import {ContactButton} from "../../ContactButton";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -8,11 +9,29 @@ const Resume = (props: ResumeProps): ReactElement => {
     const {page} = props;
     const visible = page === PageKind.RESUME;
     const containerClassName = visible ? "" : "hidden-scrolling no-touch";
-    return <div className={`resume-container embedded-scrolling ${containerClassName}`}>
-        <div className="resume-content">
-            <ResumePDF visible={visible}/>
+    return <React.Fragment>
+        <div className={`resume-container embedded-scrolling ${containerClassName}`}>
+            <div className="resume-content">
+                <ResumePDF visible={visible}/>
+            </div>
         </div>
-    </div>;
+        <div className="download-palette">
+            <ContactButton name="PDF"
+                           link="/resume.pdf"
+                           icon="pdf.png"
+                           visible={visible}
+                           offset={0}
+                           download="hallbraxton.pdf"
+            />
+            <ContactButton name="DOCX"
+                           link="/resume.docx"
+                           icon="word.png"
+                           visible={visible}
+                           offset={1}
+                           download="hallbraxton.docx"
+            />
+        </div>
+    </React.Fragment>;
 };
 
 const ResumePDF = (props: { visible: boolean }): ReactElement => {

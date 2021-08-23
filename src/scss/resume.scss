@@ -21,3 +21,16 @@
     }
   }
 }
+
+.download-palette {
+  table-layout: fixed;
+  display: table;
+  box-sizing: border-box;
+  position: absolute;
+  width: 20vw;
+  top: 74vh;
+  height: 13.6vh;
+  left: -6vw;
+  z-index: 1;
+  pointer-events: none;
+}
