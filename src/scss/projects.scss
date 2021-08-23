@@ -7,13 +7,12 @@
   position: absolute;
   .projects {
     width: 50vw;
-
+    left: 18vw;
 
     top: 0;
 
     position: absolute;
     transition: 650ms cubic-bezier(.5,.5,.41,.88);
-    left: 18vw;
 
     .entry {
       width: 100%;

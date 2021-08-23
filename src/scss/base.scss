@@ -30,12 +30,21 @@ button {
   display: table;
   box-sizing: border-box;
   position: absolute;
-  width: 50vw;
-  top: 33vh;
-  height: 34vh;
   right: 0;
   z-index: 1;
   pointer-events: none;
+
+  @media (orientation: landscape) {
+    width: 50vw;
+    top: 33vh;
+    height: 34vh;
+  }
+
+  @media (orientation: portrait) {
+    width: 100vw;
+    top: 120vh;
+    height: 20vh;
+  }
 }
 
 .page-button-track {
@@ -45,6 +54,9 @@ button {
 }
 
 .home-button-position {
+  @media (orientation: portrait) {
+    display: none;
+  }
   position: absolute;
   height: 3.6vw;
   width: 3.6vw;
