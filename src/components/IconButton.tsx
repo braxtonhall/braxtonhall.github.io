@@ -2,7 +2,7 @@ import React, {ReactElement, useState} from "react";
 import {randomTransition} from "../util/Util";
 import {SquareButton} from "./SquareButton";
 
-const ContactButton = (props: ContactButtonProps): ReactElement => {
+const IconButton = (props: ContactButtonProps): ReactElement => {
     const {name, link, icon, visible, offset, download} = props;
     const [hover, setHover] = useState(false);
 
@@ -46,5 +46,5 @@ interface ContactButtonPreviewProps {
     name: string;
 }
 
-export {ContactButton};
+export {IconButton};
 export type {ContactButtonProps};

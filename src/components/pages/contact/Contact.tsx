@@ -1,6 +1,6 @@
 import React from "react";
 import {PageKind, PageProps} from "../Page";
-import {ContactButton} from "../../ContactButton";
+import {IconButton} from "../../IconButton";
 
 const Contact = (props: ContactProps) => {
     const {page} = props;
@@ -9,23 +9,23 @@ const Contact = (props: ContactProps) => {
 
     return <React.Fragment>
         <div className="contact-palette">
-            <ContactButton name="Email"
-                           link="mailto:braxtonhall@alumni.ubc.ca"
-                           icon="gmail.png"
-                           visible={visible}
-                           offset={1}
+            <IconButton name="Email"
+                        link="mailto:braxtonhall@alumni.ubc.ca"
+                        icon="gmail.png"
+                        visible={visible}
+                        offset={1}
             />
-            <ContactButton name="GitHub"
-                           link="https://github.com/braxtonhall/"
-                           icon="github.png"
-                           visible={visible}
-                           offset={0}
+            <IconButton name="GitHub"
+                        link="https://github.com/braxtonhall/"
+                        icon="github.png"
+                        visible={visible}
+                        offset={0}
             />
-            <ContactButton name="LinkedIn"
-                           link="https://www.linkedin.com/in/braxton-hall-b49718170/"
-                           icon="linkedin.png"
-                           visible={visible}
-                           offset={2}
+            <IconButton name="LinkedIn"
+                        link="https://www.linkedin.com/in/braxton-hall-b49718170/"
+                        icon="linkedin.png"
+                        visible={visible}
+                        offset={2}
             />
         </div>
         <p className="contact-text-block">
