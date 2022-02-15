@@ -6,7 +6,7 @@ const NotFound = (props: NotFoundProps): ReactElement => {
     const visible = props.page === PageKind.NOT_FOUND;
     const className = visible ? "opaque" : "transparent no-touch no-select";
     return <SpotifyPlaylist className={"fixed-transition"} playlistId={"28Xl6doCEIVku4Cwl8HebN"}
-                            title={"Boreal Kiss Pt.1"} visible={visible}>
+                            title={"You Can't Be Here!"} visible={visible}>
         <div className={`four-oh-four fixed-transition ${className}`}><span>404</span></div>
     </SpotifyPlaylist>;
 };

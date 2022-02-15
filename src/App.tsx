@@ -34,7 +34,7 @@ const LocationApp = () => {
         <Resume page={page}/>
         <Contact page={page}/>
         <Projects page={page}/>
-        <Other page={page}/>
+        <Other page={page} path={location.pathname}/>
         <NotFound page={page}/>
     </React.Fragment>;
 };

@@ -2,6 +2,7 @@ import {PageKind} from "../Page";
 
 enum SubPageKind {
     SPOTIFY = "/spotify",
+    MINECRAFT = "/minecraft"
 }
 
 interface SubPageProps {
