@@ -18,7 +18,7 @@ const MinecraftStatsContainer = (props: {visible: boolean, setLoaded: () => void
     const [data, setData] = useState<Statistics | null>(null);
     useEffect(() => {
         props.setLoaded();
-        axios.get("https://mc.braxtonhall.ca/statistics/deaths")
+        axios.get("https://mc.braxtonhall.ca/statistics/play_one_minute")
             .then((res) => {
                 res.data.records.reverse();
                 setData(res.data);
@@ -26,35 +26,51 @@ const MinecraftStatsContainer = (props: {visible: boolean, setLoaded: () => void
     }, [props]);
 
     const containerClassName = props.visible ? "" : "hidden-scrolling no-touch";
-    // TODO projects-container should not be projects-container
-    return <div className={`projects-container embedded-scrolling ${containerClassName}`}>
-        <MinecraftStats visible={props.visible && data !== null} stats={data ?? {name: "", key: "", records: []}}/>
+    const visibility = props.visible && data !== null ? "opaque" : "transparent no-touch no-select";
+    return <div className={`minecraft-container embedded-scrolling fixed-transition ${visibility} ${containerClassName}`}>
+        <MinecraftStats stats={data ?? {name: "", key: "", records: []}}/>
     </div>;
 };
 
-const MinecraftStats = (props: {visible: boolean, stats: Statistics}) => {
-    const visibility = props.visible ? "opaque" : "transparent no-touch no-select";
-    const className = `fixed-transition ${visibility}`;
+const MinecraftStats = (props: {stats: Statistics}) => {
+
+    const className = `minecraft`;
     return <table className={className}>
         <thead>
+            <th/>
             <th>
                 Player
             </th>
             <th>
-                Deaths
+                Play Time
             </th>
         </thead>
         <tbody>
             {props.stats.records.map((record, i) =>
                 <tr key={record.player.uuid}>
+                    <td className="mc-stat">{i + 1}.</td>
                     <MCPlayer player={record.player}/>
-                    <td>
-                        {record.statistic}
+                    <td className="mc-stat">
+                        {getTime(record.statistic)}
                     </td>
                 </tr>)}
         </tbody>
     </table>;
 };
+
+const getTime = (ticks: number) => {
+    const seconds = ticks / 20;
+    const remainderSeconds = Math.floor(seconds % 60);
+    const prettySeconds = ("0" + remainderSeconds).slice(-2);
+    const minutes = seconds / 60;
+    const remainderMinutes = Math.floor(minutes % 60);
+    const prettyMinutes = ("0" + remainderMinutes).slice(-2);
+    const hours = minutes / 60;
+
+    const flooredHours = Math.floor(hours);
+
+    return `${flooredHours}h ${prettyMinutes}m ${prettySeconds}s`;
+}
 
 const MCPlayer = (props: {player: Player}) => {
     const [name, setName] = useState<string | null>(props.player.name || null);
@@ -78,7 +94,7 @@ interface Statistics {
 
 interface Record {
     player: Player;
-    statistic: string;
+    statistic: number;
 }
 
 interface Player {
