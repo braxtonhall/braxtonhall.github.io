@@ -14,7 +14,9 @@ const CRDTree: Entry = {
     end: "Dec 2021",
     technologies: ["TypeScript", "libp2p", "Express"],
     description: "CRDTree is a conflict-free replicated datatype implementation with support for complex datatypes and a git-like workflows. We also designed and implemented a network protocol to go with it!",
-    pictures: [],
+    pictures: [
+        "/img/crdtree/microbench.png",
+    ],
     link: "https://github.com/Haotian-Yang/CRDTree",
 };
 
