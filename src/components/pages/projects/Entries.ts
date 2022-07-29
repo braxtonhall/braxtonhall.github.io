@@ -8,6 +8,26 @@ interface Entry {
     link?: string;
 }
 
+const CRDTree: Entry = {
+    name: "CRDTree",
+    start: "Oct 2021",
+    end: "Dec 2021",
+    technologies: ["TypeScript", "libp2p", "Express"],
+    description: "CRDTree is a conflict-free replicated datatype implementation with support for complex datatypes and a git-like workflows. We also built designed and implemented a network protocol to go with it!",
+    pictures: [],
+    link: "https://github.com/Haotian-Yang/CRDTree",
+};
+
+const OfficeHours: Entry = {
+    name: "The Efficacy of Online Office Hours",
+    start: "Jun 2021",
+    end: "Aug 2021",
+    technologies: [],
+    description: "During the COVID-19 pandemic, we transitioned to online office hours, facilitated by an online queue, which gave us unprecedented visibility into the goings on in office hours.",
+    pictures: [],
+    link: "https://dl.acm.org/doi/10.1145/3484272.3484966",
+}
+
 const NthPass: Entry = {
     name: "NthPass",
     start: "Oct 2020",
@@ -70,6 +90,7 @@ const Fermata: Entry = {
 };
 
 const ENTRIES: Entry[] = [
+    CRDTree,
     NthPass,
     LivelyRecorder,
     Surface,
