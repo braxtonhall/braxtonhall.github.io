@@ -41,7 +41,7 @@ const LocationApp = () => {
 
 
 const selectPage = (path: string): PageKind =>
-    Object.values(PageKind).find(page => page === path) ??
+    Object.values(PageKind).find(page => page.toLowerCase() === path.toLowerCase()) ??
     (path.startsWith(PageKind.OTHER) ? PageKind.OTHER : PageKind.NOT_FOUND);
 
 export default App;

@@ -16,7 +16,7 @@ const Other = (props: OtherProps): ReactElement => {
 // TODO maybe the page comes from localStorage?
 const selectSubPage = (path: string): SubPageKind => {
     const subPath = path.replace(PageKind.OTHER, "");
-    return Object.values(SubPageKind).find(page => page === subPath) ??
+    return Object.values(SubPageKind).find(page => page.toLowerCase() === subPath.toLowerCase()) ??
         SubPageKind.SPOTIFY;
 };
 
