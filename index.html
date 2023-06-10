@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="a website by braxton hall" />
+		<link rel="apple-touch-icon" href="/img/icon128.png" />
+
+		<title>Braxton Hall</title>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"
+			integrity="sha512-SYfDUYPg5xspsG6OOpXU366G8SZsdHOhqk/icdrYJ2E/WKZxPxze7d2HD3AyXpT7U22PZ5y74xRpqZ6A2bJ+kQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<style>
+			body {
+				margin: 50px auto;
+				max-width: 1000px;
+				position: relative;
+				text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.5);
+				text-rendering: optimizeLegibility;
+				font: 0.9em/1.3em Georgia, serif;
+				-webkit-font-smoothing: subpixel-antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			a,
+			a:visited,
+			a:hover {
+				color: blue;
+				text-shadow: 0 0 0.1px rgba(255, 0, 0, 0.5);
+			}
+
+			main {
+				max-width: 500px;
+				margin: 0 20px;
+				margin-top: 25px;
+			}
+
+			h1,
+			h2,
+			li,
+			p {
+				font-weight: normal;
+				margin-bottom: 0;
+				font-size: 13px;
+			}
+
+			header,
+			footer {
+				text-align: right;
+				margin: 0;
+				margin-right: 20px;
+			}
+
+			ul {
+				margin: 0;
+				padding-left: 0;
+			}
+
+			li {
+				list-style: none;
+				white-space: pre-wrap;
+			}
+
+			@media only screen and (min-width: 600px) {
+				header,
+				footer {
+					position: absolute;
+					right: 0;
+				}
+
+				header {
+					top: 0;
+				}
+
+				footer {
+					bottom: 0;
+				}
+
+				main {
+					margin-top: 0;
+					margin-right: 200px;
+				}
+
+				li {
+					white-space: pre;
+				}
+			}
+			header > * {
+				margin: 0;
+			}
+			main > h1:after {
+				content: " ";
+				display: block;
+				border: 0.1px solid lightgray;
+			}
+			main img {
+				margin-bottom: 2em;
+				max-width: 100%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			const selectFile = () => {
+				if (window.location.hash.length > 1) {
+					const path = window.location.hash.replace("#", "");
+					history.pushState({page: 1}, "Redirecting", path);
+					return path.replace(/\.pretty/, "");
+				} else {
+					return "README.md";
+				}
+			};
+
+			const getPath = (suffix) =>
+				`https://raw.githubusercontent.com/braxtonhall/braxtonhall.github.io/main/${suffix}`;
+
+			const getPage = (suffix) =>
+				fetch(getPath(suffix))
+					.then((response) => response.text())
+					.then((text) => window.markdownit({html: true}).render(text));
+
+			const folder = (path) => path.split("/").slice(0, -1).join("/");
+			const descend = (path) => path.split("/").slice(1).join("/");
+
+			const join = (pathA, pathB) => {
+				if (pathB.startsWith("./")) {
+					return join(pathA, descend(pathB));
+				} else if (pathB.startsWith("../")) {
+					return join(folder(pathA), descend(pathB));
+				} else {
+					return `${pathA}/${pathB}`;
+				}
+			};
+
+			const inlinePages = (relativeTo) => ($parent) =>
+				Promise.all(
+					$parent.find("a").map(async (_, element) => {
+						const $element = $(element);
+						const href = $element.attr("href");
+						if ($element.text() === "#inline" && href.endsWith(".md")) {
+							const filePath = join(relativeTo, href);
+							return getPage(filePath)
+								.then((render) => {
+									const $render = $(render);
+									$element.replaceWith($render);
+									return $render;
+								})
+								.then(inlinePages(folder(filePath)));
+						}
+					})
+				);
+
+			const fixLinks = () => {
+				$("a").each((_, element) => {
+					const $element = $(element);
+					const href = $element.attr("href");
+					if (href.endsWith(".md")) {
+						$element.attr("href", `${href}.pretty`);
+					}
+				});
+				$("h1, h2, h3, h4").each((_, element) => {
+					const $element = $(element);
+					const text = $element.text();
+					const id = text
+						.toLowerCase()
+						.replace(/ /g, "-")
+						.replace(/[^a-z-]/g, "");
+					$element.attr("id", id);
+				});
+			};
+
+			getPage(selectFile())
+				.then((render) => $("#main").html(render))
+				.then(inlinePages("."))
+				.finally(fixLinks);
+		</script>
+		<header>
+			<h1>braxtonhall</h1>
+			<p><a href="mailto:braxtonjhall@gmail.com">email</a></p>
+			<p>
+				<a href="https://www.linkedin.com/in/braxton-hall-b49718170/">linkedin</a>
+			</p>
+		</header>
+		<main id="main"></main>
+	</body>
+</html>
