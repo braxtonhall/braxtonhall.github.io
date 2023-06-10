@@ -1,18 +1,3 @@
-# projects
+# Website Under Construction
 
-- project
-- another project
-
-This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
-This is a paragraph.
-This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
-
-This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
-This is a paragraph.
-This is a paragraph.
-
-![](./img/surface/shine.png)
-
-[#inline](./md/test-post-1.md)
-
-## projects
+[#inline](./md/projects.md)
