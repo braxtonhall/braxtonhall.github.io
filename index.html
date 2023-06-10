@@ -99,7 +99,7 @@
 				display: block;
 				border: 0.1px solid lightgray;
 			}
-			main img {
+			img {
 				margin-bottom: 2em;
 				max-width: 100%;
 				display: block;
@@ -173,23 +173,19 @@
 					const id = text
 						.toLowerCase()
 						.replace(/ /g, "-")
-						.replace(/[^a-z-]/g, "");
+						.replace(/[^0-9a-z-]/g, "");
 					$element.attr("id", id);
 				});
 			};
 
-			getPage(selectFile())
-				.then((render) => $("#main").html(render))
-				.then(inlinePages("."))
-				.finally(fixLinks);
+			Promise.all([
+				getPage(selectFile())
+					.then((render) => $("#main").html(render))
+					.then(inlinePages(".")),
+				getPage("md/header.md").then((render) => $("#header").html(render)),
+			]).finally(fixLinks);
 		</script>
-		<header>
-			<h1>braxtonhall</h1>
-			<p><a href="mailto:braxtonjhall@gmail.com">email</a></p>
-			<p>
-				<a href="https://www.linkedin.com/in/braxton-hall-b49718170/">linkedin</a>
-			</p>
-		</header>
+		<header id="header"></header>
 		<main id="main"></main>
 	</body>
 </html>
