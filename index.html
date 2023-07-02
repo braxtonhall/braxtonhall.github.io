@@ -167,8 +167,6 @@
 						if ($element.text() === "#inline" && href.endsWith(".md")) {
 							$element.css({display: "none"});
 							const filePath = join(relativeTo, href);
-							console.log(relativeTo, href);
-							console.log(filePath);
 							return getPage(filePath)
 								.then((render) => {
 									const $render = $(render);
