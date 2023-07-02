@@ -139,7 +139,7 @@
 					.then((response) => response.text())
 					.then((text) => window.markdownit({html: true}).render(text));
 
-			const folder = (path) => path.split("/").slice(0, -1).join("/");
+			const folder = (path) => path.split("/").slice(0, -1).join("/") || ".";
 			const descend = (path) => path.split("/").slice(1).join("/");
 
 			const join = (pathA, pathB) => {
@@ -160,6 +160,8 @@
 						if ($element.text() === "#inline" && href.endsWith(".md")) {
 							$element.css({display: "none"});
 							const filePath = join(relativeTo, href);
+							console.log(relativeTo, href);
+							console.log(filePath);
 							return getPage(filePath)
 								.then((render) => {
 									const $render = $(render);
@@ -196,10 +198,11 @@
 				});
 			};
 
+			const selectedFile = selectFile();
 			Promise.all([
-				getPage(selectFile())
+				getPage(selectedFile)
 					.then((render) => $("#main").html(render))
-					.then(inlinePages("."))
+					.then(inlinePages(folder(selectedFile)))
 					.then(evalScripts),
 				getPage("md/header.md").then((render) => $("#header").html(render)),
 			]).finally(fixLinks);
