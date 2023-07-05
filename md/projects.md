@@ -1,8 +1,10 @@
-# Projects
+# projects
 
 ## 2023 - Tenure Tracks
 
 ## 2022 - [fib](https://fib.directory/)
+
+## 2022 - [Better LibraryThing](https://betterlibrarything.com/)
 
 ## 2021 - [CRDTree](https://github.com/iyht/CRDTree)
 
