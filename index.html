@@ -43,6 +43,7 @@
 			}
 
 			main {
+				display: none;
 				max-width: 500px;
 				margin: 0 20px;
 				margin-top: 25px;
@@ -67,7 +68,7 @@
 
 			ul {
 				margin: 0;
-				padding-left: 0;
+				padding-inline-start: 0;
 			}
 
 			ol {
@@ -121,12 +122,15 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
-			code.language-eval {
+			code.language-eval,
+			code.language-style {
 				display: none;
 			}
 		</style>
 	</head>
 	<body>
+		<header id="header"></header>
+		<main></main>
 		<script>
 			const selectFile = () => {
 				if (window.location.hash.length > 1) {
@@ -178,11 +182,25 @@
 					})
 				).then(() => $parent);
 
-			const evalScripts = ($parent) =>
-				$parent
-					.find("code")
+			const evalCode = ($parent) => {
+				const $code = $parent.find("code");
+				evalScripts($code);
+				evalStyle($code);
+			};
+
+			const evalScripts = ($code) =>
+				$code
 					.filter((_, element) => element.classList.contains("language-eval"))
 					.each((_, element) => eval(element.textContent));
+
+			const evalStyle = ($code) =>
+				$code
+					.filter((_, element) => element.classList.contains("language-style"))
+					.each((_, element) => {
+						const style = document.createElement("style");
+						style.innerHTML = element.textContent;
+						document.head.appendChild(style);
+					});
 
 			const fixLinks = () => {
 				$("a").each((_, element) => {
@@ -204,15 +222,16 @@
 			};
 
 			const selectedFile = selectFile();
+			const $main = $("main");
 			Promise.all([
 				getPage(selectedFile)
-					.then((render) => $("#main").html(render))
+					.then((render) => $main.html(render))
 					.then(inlinePages(folder(selectedFile)))
-					.then(evalScripts),
+					.then(evalCode),
 				getPage("md/header.md").then((render) => $("#header").html(render)),
-			]).finally(fixLinks);
+			])
+				.finally(fixLinks)
+				.finally(() => $main.show());
 		</script>
-		<header id="header"></header>
-		<main id="main"></main>
 	</body>
 </html>
