@@ -1,6 +1,6 @@
 # Sony®️ DCR-SR45
 
-secretdj 22.mar
+[secretdj 22.mar](../../secretdj/2022.md)
 
 ## track list
 

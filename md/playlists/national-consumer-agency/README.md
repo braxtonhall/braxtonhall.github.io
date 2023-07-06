@@ -1,6 +1,6 @@
 # National Consumer Agency
 
-NCA (formerly &quot;National Consumer Agency&quot;) released their sophomore album, &quot;Define Your Good&quot; in 2009. They are often compared with contemporaries such as Explosions in the Sky, MGMT, The Main Drag, and Tokyo Police Club. for a secretdj 21.feb prompt
+NCA (formerly &quot;National Consumer Agency&quot;) released their sophomore album, &quot;Define Your Good&quot; in 2009. They are often compared with contemporaries such as Explosions in the Sky, MGMT, The Main Drag, and Tokyo Police Club. [for a secretdj 21.feb prompt](../../secretdj/2021-2.md)
 
 ## track list
 

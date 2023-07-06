@@ -1,6 +1,6 @@
 # insomnia
 
-darkness where the sun doesn&#x27;t set. secret dj 23.jul
+darkness where the sun doesn&#x27;t set. [secret dj 23.jul](../../secretdj/2023.md)
 
 ## track list
 

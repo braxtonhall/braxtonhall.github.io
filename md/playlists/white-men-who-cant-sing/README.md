@@ -1,6 +1,6 @@
 # white men who can't sing
 
-The middle is a little shaken up wrt low&#x2F;high energy for the sake of flow. EDIT: ACTUALLY the first 8 songs fit the requirements and are my submmission. The following 8 songs are extra credit.
+The middle is a little shaken up wrt low&#x2F;high energy for the sake of flow. EDIT: ACTUALLY the first 8 songs fit the requirements and are my [submmission](../../secretdj/2019.md). The following 8 songs are extra credit.
 
 ## track list
 

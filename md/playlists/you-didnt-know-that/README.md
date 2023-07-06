@@ -2,6 +2,21 @@
 
 looping playlist wow 🔁
 
+> the towering, bearded man in that photo  
+> was only eighteen
+>
+> "bruh you remember a time before Shrek?  
+> that's fuckin' wavy"  
+> he once told me
+>
+> pictures taken on an afternoon walk with Nick in Hong Kong  
+> before everything
+>
+> songs that were on repeat  
+> during a time I am very fond of
+
+text written 2020 april 22
+
 ## track list
 
 1. "Sheep" by Gonjasufi
@@ -16,5 +31,5 @@ looping playlist wow 🔁
 ## links
 
 - [spotify](https://open.spotify.com/playlist/1NtNM8fCs7BIzrHDeeFU9z)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

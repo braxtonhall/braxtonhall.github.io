@@ -1,6 +1,6 @@
 # segments
 
-another for jin; secret dj 2020 - objects and lines
+another for jin; [secret dj 2020 - objects and lines](../../secretdj/2020.md)
 
 ## track list
 

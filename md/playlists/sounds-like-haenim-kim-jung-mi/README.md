@@ -1,6 +1,6 @@
 # "sounds like haenim kim jung mi"
 
-listen this is as upbeat as my music gets without synthesizers. hope you&#x27;re open to psych rock. from a SecretDJ 21.jan prompt
+listen this is as upbeat as my music gets without synthesizers. hope you&#x27;re open to psych rock. [from a SecretDJ 21.jan prompt](../../secretdj/2021.md)
 
 ## track list
 
