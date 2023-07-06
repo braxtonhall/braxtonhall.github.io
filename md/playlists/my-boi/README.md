@@ -7,7 +7,7 @@ S I S T T T A R . playlist not final
 1. "Flashback" by Kelis
 2. "WHAT WE DREW 우리가 그려왔던" by Yaeji
 3. "只愛陌生人" by Faye Wong
-4. "" by
+4. "French Toast (feat. Wale & Joyce Wrice)" by Westside Gunn; Wale; Joyce Wrice
 5. "All For You" by Janet Jackson
 6. "4 Walls" by f(x)
 
