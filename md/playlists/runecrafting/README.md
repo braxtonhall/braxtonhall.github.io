@@ -32,5 +32,5 @@ text written 2020 april 26
 ## links
 
 - [spotify](https://open.spotify.com/playlist/1aWffDQqY8hv4xlPhGa4dY)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)
