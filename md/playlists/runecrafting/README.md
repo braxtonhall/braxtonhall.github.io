@@ -17,6 +17,6 @@ notes: Maybe replace Hum Pt. 2 with Hum Pt. 1?
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/1aWffDQqY8hv4xlPhGa4dY)
+- [spotify](https://open.spotify.com/playlist/1aWffDQqY8hv4xlPhGa4dY)
 - playlist cover
 - supplemental photo

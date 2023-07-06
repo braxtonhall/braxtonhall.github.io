@@ -16,6 +16,6 @@ from a SecretDJ 21.jan prompt
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/0VxGIQHhAnol9HEwx2KALy)
+- [spotify](https://open.spotify.com/playlist/0VxGIQHhAnol9HEwx2KALy)
 - playlist cover
 - supplemental photo

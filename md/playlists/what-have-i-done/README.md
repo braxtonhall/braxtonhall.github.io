@@ -16,6 +16,6 @@ wow i found a playlist from half a year ago that had the description &quot;just 
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/5Uowo43XZbdJMLqIDF9Jjk)
+- [spotify](https://open.spotify.com/playlist/5Uowo43XZbdJMLqIDF9Jjk)
 - playlist cover
 - supplemental photo

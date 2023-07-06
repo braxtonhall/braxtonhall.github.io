@@ -18,6 +18,6 @@ every day the same dream L M A O
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2BRXmYc75el9duSp6R4R0a)
+- [spotify](https://open.spotify.com/playlist/2BRXmYc75el9duSp6R4R0a)
 - playlist cover
 - supplemental photo

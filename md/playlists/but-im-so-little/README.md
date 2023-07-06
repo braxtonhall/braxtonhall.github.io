@@ -1,5 +1,18 @@
 # But I'm so little!
 
+> a little girl asked me if I had any children  
+> I said no  
+> she then asked me if I had any grandchildren  
+> I said no
+>
+> I asked her if she had any children  
+> "But I'm so little!" she exclaimed
+>
+> songs from a playlist exchange with Sunny  
+> the prompt was "lonely summer"
+
+text written 2020 april 18
+
 ## track list
 
 1. "Obra Cinco" by Helado Negro
@@ -19,6 +32,6 @@
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/5nuS0DNECM4EO2Kc2eweTN)
-- playlist cover
+- [spotify](https://open.spotify.com/playlist/5nuS0DNECM4EO2Kc2eweTN)
+- [playlist cover](./cover.jpeg)
 - supplemental photo

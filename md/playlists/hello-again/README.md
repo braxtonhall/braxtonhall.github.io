@@ -108,6 +108,6 @@ This playlist is intended to be shuffled. 🔀
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2rSGxfcGw7ATv40HMnklzs)
+- [spotify](https://open.spotify.com/playlist/2rSGxfcGw7ATv40HMnklzs)
 - playlist cover
 - supplemental photo

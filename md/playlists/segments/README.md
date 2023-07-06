@@ -15,6 +15,6 @@ another for jin; secret dj 2020 - objects and lines
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2lG54dKc1ol8MuH0HiyMK6)
+- [spotify](https://open.spotify.com/playlist/2lG54dKc1ol8MuH0HiyMK6)
 - playlist cover
 - supplemental photo

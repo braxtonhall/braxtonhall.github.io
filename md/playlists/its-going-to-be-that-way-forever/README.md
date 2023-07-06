@@ -23,6 +23,6 @@ To the moon and back.
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/3d2emAKJdCBwN8JwMZ0rX6)
+- [spotify](https://open.spotify.com/playlist/3d2emAKJdCBwN8JwMZ0rX6)
 - playlist cover
 - supplemental photo

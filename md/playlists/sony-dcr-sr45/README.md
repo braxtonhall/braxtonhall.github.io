@@ -15,6 +15,6 @@ secretdj 22.mar
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/5vAWROgZ9qmB1tdGlqxUDb)
+- [spotify](https://open.spotify.com/playlist/5vAWROgZ9qmB1tdGlqxUDb)
 - playlist cover
 - supplemental photo

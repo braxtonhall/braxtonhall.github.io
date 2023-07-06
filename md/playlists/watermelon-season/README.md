@@ -2,6 +2,21 @@
 
 Your Sufjan Stevens playlist is severely lacking.
 
+> the prompt was  
+> "I can feel my teeth falling out"
+>
+> this playlist was made for Sam in a playlist exchange
+>
+> I framed it like  
+> I wanted to push at the borders of his taste  
+> or some other nonsense
+>
+> but I think I knew he wouldn't like it  
+> I was being flippant  
+> in what could have been a thoughtful exchange
+
+text written 2020 april 21
+
 ## track list
 
 1. "Swimming" by Kero Kero Bonito
@@ -20,6 +35,6 @@ Your Sufjan Stevens playlist is severely lacking.
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2j080WyeCtDwaSxVggEBhT)
-- playlist cover
-- supplemental photo
+- [spotify](https://open.spotify.com/playlist/2j080WyeCtDwaSxVggEBhT)
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

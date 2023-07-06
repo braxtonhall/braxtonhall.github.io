@@ -18,6 +18,6 @@ yeah i know i really liked the worst person in the world
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2LVBTnpdLb1JKjwmLO70JU)
+- [spotify](https://open.spotify.com/playlist/2LVBTnpdLb1JKjwmLO70JU)
 - playlist cover
 - supplemental photo

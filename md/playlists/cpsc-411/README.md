@@ -1,5 +1,24 @@
 # CPSC 411
 
+> some songs I like  
+> that I just think sound nice together
+>
+> these pictures were taken in Tokyo  
+> Rojina and Sharon were kind enough to show me around the city
+>
+> I was nervous spending so much one-on-one time with people  
+> I hadn't with before in a new country
+>
+> but they were perfect
+>
+> a small old lady pressed her  
+> face up against these pumpkins  
+> and kept whispering "sugoi"
+>
+> it was cute
+
+text written 2020 april 14
+
 ## track list
 
 1. "The Yabba" by Battles
@@ -14,6 +33,6 @@
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/0n5ZDpqOrQ74Feyis0i6Xw)
-- playlist cover
-- supplemental photo
+- [spotify](https://open.spotify.com/playlist/0n5ZDpqOrQ74Feyis0i6Xw)
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

@@ -21,6 +21,6 @@ not yet ordered
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/7ucWh94fBsNWrXbA5B4k5h)
+- [spotify](https://open.spotify.com/playlist/7ucWh94fBsNWrXbA5B4k5h)
 - playlist cover
 - supplemental photo

@@ -17,6 +17,6 @@ splab turn out
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/1VxtEQ4EiCKVyTW1YTn2GQ)
+- [spotify](https://open.spotify.com/playlist/1VxtEQ4EiCKVyTW1YTn2GQ)
 - playlist cover
 - supplemental photo

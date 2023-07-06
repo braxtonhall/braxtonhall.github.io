@@ -14,6 +14,6 @@ nether night
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/7v5O9MJqYdyGjCwHn21p9S)
+- [spotify](https://open.spotify.com/playlist/7v5O9MJqYdyGjCwHn21p9S)
 - playlist cover
 - supplemental photo

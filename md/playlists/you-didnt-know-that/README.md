@@ -15,6 +15,6 @@ looping playlist wow 🔁
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/1NtNM8fCs7BIzrHDeeFU9z)
+- [spotify](https://open.spotify.com/playlist/1NtNM8fCs7BIzrHDeeFU9z)
 - playlist cover
 - supplemental photo

@@ -17,6 +17,6 @@ darkness where the sun doesn&#x27;t set. secret dj 23.jul
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/7sFmV5dvj7636u3LkWlgUU)
+- [spotify](https://open.spotify.com/playlist/7sFmV5dvj7636u3LkWlgUU)
 - playlist cover
 - supplemental photo

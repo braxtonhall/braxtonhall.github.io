@@ -23,6 +23,6 @@ This is a bad playlist.
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/6RdCy2nWvnDLLOiVrU0Y7M)
+- [spotify](https://open.spotify.com/playlist/6RdCy2nWvnDLLOiVrU0Y7M)
 - playlist cover
 - supplemental photo

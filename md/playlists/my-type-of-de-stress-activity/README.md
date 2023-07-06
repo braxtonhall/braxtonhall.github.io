@@ -17,6 +17,6 @@ Shamelessly borrowed from Touch This Skin, Honey
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/3C0JhmmYK7sFujgw07wKa3)
+- [spotify](https://open.spotify.com/playlist/3C0JhmmYK7sFujgw07wKa3)
 - playlist cover
 - supplemental photo

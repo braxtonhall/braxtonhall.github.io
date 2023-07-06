@@ -2,6 +2,23 @@
 
 Songs that lack texture, but make up for it in bright, saturated colours 🔀
 
+> Liam took time to waste time with me in Seoul  
+> where these pictures were taken
+>
+> there are a few people that feel like childhood heroes to me  
+> Matt, Kyle, Liam all among them
+>
+> here are songs that sound  
+> like the pictures look
+>
+> seeing Liam  
+> a rare event  
+> yet after a decade it's still  
+> concentrated entertainment  
+> teenage trepidation
+
+text written 2020 april 19
+
 ## track list
 
 1. "ディスコって" by オノシュンスケ
@@ -14,6 +31,6 @@ Songs that lack texture, but make up for it in bright, saturated colours 🔀
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/1S7wV494SieVYVUQBsL5gU)
-- playlist cover
-- supplemental photo
+- [spotify](https://open.spotify.com/playlist/1S7wV494SieVYVUQBsL5gU)
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

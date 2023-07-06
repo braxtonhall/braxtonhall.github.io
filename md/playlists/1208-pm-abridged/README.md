@@ -30,6 +30,6 @@ Songs from a 2017 mixtape. SUMMER ‘17.
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/3PXn4aOTbU4LBhr31J67Ru)
+- [spotify](https://open.spotify.com/playlist/3PXn4aOTbU4LBhr31J67Ru)
 - playlist cover
 - supplemental photo

@@ -18,6 +18,6 @@ afx is a crutch
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/43L5IS8z4ilxGTrK7oCRJz)
+- [spotify](https://open.spotify.com/playlist/43L5IS8z4ilxGTrK7oCRJz)
 - playlist cover
 - supplemental photo

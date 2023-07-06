@@ -13,6 +13,6 @@ S I S T T T A R . playlist not final
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/6pIDsZ9orw7ENFQ5eYIDis)
+- [spotify](https://open.spotify.com/playlist/6pIDsZ9orw7ENFQ5eYIDis)
 - playlist cover
 - supplemental photo

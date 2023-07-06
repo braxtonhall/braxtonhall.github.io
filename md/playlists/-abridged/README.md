@@ -55,6 +55,6 @@ Songs from a 2016 double mixtape. MISSING: luxury elite - cold; Lisa Frank 420 &
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/5zdprhd1dZCKQIpgzFjVil)
+- [spotify](https://open.spotify.com/playlist/5zdprhd1dZCKQIpgzFjVil)
 - playlist cover
 - supplemental photo

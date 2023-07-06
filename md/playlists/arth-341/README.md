@@ -18,6 +18,6 @@ The songs I used to study for death.
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/1aoAxaojaYafL4M6H2ZppX)
+- [spotify](https://open.spotify.com/playlist/1aoAxaojaYafL4M6H2ZppX)
 - playlist cover
 - supplemental photo

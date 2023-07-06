@@ -15,6 +15,6 @@ I&#x27;LL SEE U AFTER EUROPE AND WE&#x27;LL PLAY MARIOKART AND PUT ON A NICE REC
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/6CbskH7PfzHCj4OKHlDoEJ)
+- [spotify](https://open.spotify.com/playlist/6CbskH7PfzHCj4OKHlDoEJ)
 - playlist cover
 - supplemental photo

@@ -49,6 +49,6 @@ when i was an english major 🔀
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/0PMeYz1KH9zqyzAr88C7tb)
+- [spotify](https://open.spotify.com/playlist/0PMeYz1KH9zqyzAr88C7tb)
 - playlist cover
 - supplemental photo

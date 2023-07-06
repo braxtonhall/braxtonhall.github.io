@@ -20,6 +20,6 @@ YO ARE U DUTCH YET?
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2HjkTva3VxnoKab9lbbpjJ)
+- [spotify](https://open.spotify.com/playlist/2HjkTva3VxnoKab9lbbpjJ)
 - playlist cover
 - supplemental photo

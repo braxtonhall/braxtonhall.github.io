@@ -19,6 +19,6 @@ shabazz bjork anco AGAIN
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/3CncNzjzUS25ny0Ynz8yXZ)
+- [spotify](https://open.spotify.com/playlist/3CncNzjzUS25ny0Ynz8yXZ)
 - playlist cover
 - supplemental photo

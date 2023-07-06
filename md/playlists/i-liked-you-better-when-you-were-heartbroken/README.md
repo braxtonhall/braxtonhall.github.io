@@ -2,6 +2,18 @@
 
 OK I&#x27;ll give this one another try at a later date.
 
+> I had no idea who this was  
+> when these pictures were taken in Munich  
+> but I was overwhelmed  
+> my camera couldn't focus
+>
+> the title of this collection  
+> is something I said to a dear friend
+>
+> then facetiously tried to frame as a joke
+
+text written 2020 april 20
+
 ## track list
 
 1. "Death Grips Is Online" by Death Grips
@@ -21,6 +33,6 @@ OK I&#x27;ll give this one another try at a later date.
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/5eLofGpvcn9EsPeweHvYik)
-- playlist cover
+- [spotify](https://open.spotify.com/playlist/5eLofGpvcn9EsPeweHvYik)
+- [playlist cover](./cover.jpeg)
 - supplemental photo

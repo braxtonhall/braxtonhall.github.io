@@ -14,6 +14,6 @@ Music from and inspired by the critically acclaimed Summer hit, Solo: A Star War
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/0fvW8sp3vWVXzblxeDR3qE)
+- [spotify](https://open.spotify.com/playlist/0fvW8sp3vWVXzblxeDR3qE)
 - playlist cover
 - supplemental photo

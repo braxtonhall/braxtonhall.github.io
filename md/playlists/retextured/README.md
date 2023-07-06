@@ -19,6 +19,6 @@ Songs that while textured, are pastel or muted in colour palette.
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/0gWX8iwyUkTg4LRf8HPrzD)
+- [spotify](https://open.spotify.com/playlist/0gWX8iwyUkTg4LRf8HPrzD)
 - playlist cover
 - supplemental photo

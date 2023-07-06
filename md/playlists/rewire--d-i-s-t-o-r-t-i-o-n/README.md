@@ -15,6 +15,6 @@ This playlist started SO STRONG :(
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/0HGFCBAWG7gqDyAqbOoSgx)
+- [spotify](https://open.spotify.com/playlist/0HGFCBAWG7gqDyAqbOoSgx)
 - playlist cover
 - supplemental photo

@@ -23,6 +23,6 @@ The middle is a little shaken up wrt low&#x2F;high energy for the sake of flow. 
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2VzmuWR7301gvcBlgFypFt)
+- [spotify](https://open.spotify.com/playlist/2VzmuWR7301gvcBlgFypFt)
 - playlist cover
 - supplemental photo

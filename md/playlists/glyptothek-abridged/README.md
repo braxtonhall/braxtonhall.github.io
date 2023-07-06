@@ -28,6 +28,6 @@ Songs from a 2019&#x2F;2020 mixtape. Side A (Dawn til Dusk) Tracks 1-10. Side B 
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/621t1UmH5IcFbCBpziYZMC)
+- [spotify](https://open.spotify.com/playlist/621t1UmH5IcFbCBpziYZMC)
 - playlist cover
 - supplemental photo

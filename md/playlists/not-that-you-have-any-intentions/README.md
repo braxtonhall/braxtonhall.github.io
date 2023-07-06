@@ -1,5 +1,19 @@
 # Not that you have any intentions
 
+> I spent a good chunk of 2019 on the other side of the planet  
+> yet somehow the most significant development of the year  
+> might have been meeting this goober
+>
+> it's been a slice  
+> have a good life in China  
+> remember the homies
+>
+> also songs  
+> (mostly)  
+> from 2020
+
+text written 2020 april 16
+
 ## track list
 
 1. "I'm New Here" by Gil Scott-Heron; Makaya McCraven
@@ -12,6 +26,6 @@
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/68JxE0FrbabdoQQPgu0YYS)
-- playlist cover
-- supplemental photo
+- [spotify](https://open.spotify.com/playlist/68JxE0FrbabdoQQPgu0YYS)
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

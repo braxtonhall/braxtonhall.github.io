@@ -12,6 +12,6 @@ just an overgrown orangutan
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/6u12HdVLwFkhJftVOFqXxZ)
+- [spotify](https://open.spotify.com/playlist/6u12HdVLwFkhJftVOFqXxZ)
 - playlist cover
 - supplemental photo

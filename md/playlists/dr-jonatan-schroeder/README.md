@@ -20,6 +20,6 @@ work in progress don&#x27;t look
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/5UJ7HRDVYRA9OAymuQRB6j)
+- [spotify](https://open.spotify.com/playlist/5UJ7HRDVYRA9OAymuQRB6j)
 - playlist cover
 - supplemental photo

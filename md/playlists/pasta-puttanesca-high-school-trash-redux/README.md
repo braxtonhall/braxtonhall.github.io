@@ -38,6 +38,6 @@ the sounds of a dropout 🔀
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/4P8bVnu7FarOmzGoKVLotS)
+- [spotify](https://open.spotify.com/playlist/4P8bVnu7FarOmzGoKVLotS)
 - playlist cover
 - supplemental photo

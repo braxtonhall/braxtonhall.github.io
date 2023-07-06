@@ -17,6 +17,6 @@ BM. B-BM. CHK.
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/1oLthjuVkKR0J3BlCGn3GC)
+- [spotify](https://open.spotify.com/playlist/1oLthjuVkKR0J3BlCGn3GC)
 - playlist cover
 - supplemental photo

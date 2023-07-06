@@ -18,6 +18,6 @@ HOW IS THIS PLAYLIST SO BAD
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2mOQvmDVzUaAYuDs8CxVhR)
+- [spotify](https://open.spotify.com/playlist/2mOQvmDVzUaAYuDs8CxVhR)
 - playlist cover
 - supplemental photo

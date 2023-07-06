@@ -16,6 +16,6 @@ An old sketch combined with left over ideas from &quot;glyptothek: Abridged&quot
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/28Xl6doCEIVku4Cwl8HebN)
+- [spotify](https://open.spotify.com/playlist/28Xl6doCEIVku4Cwl8HebN)
 - playlist cover
 - supplemental photo

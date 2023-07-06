@@ -13,6 +13,6 @@ since i was twenty-six
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2MbHxdIFZoxL6AXO5m3za1)
+- [spotify](https://open.spotify.com/playlist/2MbHxdIFZoxL6AXO5m3za1)
 - playlist cover
 - supplemental photo

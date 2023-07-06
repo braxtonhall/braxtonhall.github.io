@@ -18,6 +18,6 @@ notes: replace Sonique with Cascada?
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/14OlwEygHOXTfpwZNsGVLY)
+- [spotify](https://open.spotify.com/playlist/14OlwEygHOXTfpwZNsGVLY)
 - playlist cover
 - supplemental photo

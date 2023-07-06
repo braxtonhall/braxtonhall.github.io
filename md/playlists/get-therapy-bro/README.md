@@ -16,6 +16,6 @@ YOU ARE SO CONCEITED -- YOU THINK EVERYTHING IS ABOUT YOU. WELL YOU KNOW WHAT? I
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2Fn9nMrqOcw086f6mBb4KO)
+- [spotify](https://open.spotify.com/playlist/2Fn9nMrqOcw086f6mBb4KO)
 - playlist cover
 - supplemental photo

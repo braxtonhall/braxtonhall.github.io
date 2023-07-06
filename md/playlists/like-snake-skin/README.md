@@ -29,6 +29,6 @@ text written 2021 november 15
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/6g47avpo4zWRspzsn0bvAE)
+- [spotify](https://open.spotify.com/playlist/6g47avpo4zWRspzsn0bvAE)
 - [playlist cover](./cover.jpeg)
 - [supplemental photo](./supplement.jpeg)

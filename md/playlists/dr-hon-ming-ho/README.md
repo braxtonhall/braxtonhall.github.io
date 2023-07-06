@@ -21,6 +21,6 @@ Let&#x27;s try that again. A second attempt at MATH 2111.
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/05XAs6BnzyRL97oDNcAk3F)
+- [spotify](https://open.spotify.com/playlist/05XAs6BnzyRL97oDNcAk3F)
 - playlist cover
 - supplemental photo

@@ -13,6 +13,6 @@ there&#x27;s nothing i resent more than affection
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2ai2BAuczODOopI4t4tyLp)
+- [spotify](https://open.spotify.com/playlist/2ai2BAuczODOopI4t4tyLp)
 - playlist cover
 - supplemental photo

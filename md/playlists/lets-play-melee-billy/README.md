@@ -21,6 +21,6 @@ This playlist is intended to be shuffled 🔀
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/73KwdhYbU1R57hd0iOzhhv)
+- [spotify](https://open.spotify.com/playlist/73KwdhYbU1R57hd0iOzhhv)
 - playlist cover
 - supplemental photo

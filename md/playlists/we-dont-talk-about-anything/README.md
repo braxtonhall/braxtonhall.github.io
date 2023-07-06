@@ -1,5 +1,20 @@
 # we don't talk about anything
 
+> somebody once told me  
+> "we don't talk about anything"  
+> and all I could think was  
+> "I don't talk about anything with anyone"
+>
+> I named this playlist that
+>
+> these pictures are from Seattle with Jackie and Megha
+>
+> it was my first time travelling with friends  
+> I regret not having the energy or money to be more enthusiastic  
+> but I'm glad they came with me
+
+text written 2020 april 13
+
 ## track list
 
 1. "Disorder - Live" by Joy Division
@@ -19,6 +34,6 @@
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/0aEaSr4kyF8yX5MrSvqpWi)
-- playlist cover
-- supplemental photo
+- [spotify](https://open.spotify.com/playlist/0aEaSr4kyF8yX5MrSvqpWi)
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

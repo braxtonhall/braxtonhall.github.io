@@ -17,6 +17,6 @@ NCA (formerly &quot;National Consumer Agency&quot;) released their sophomore alb
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/5KosoW91jvviXuN4I0ig7M)
+- [spotify](https://open.spotify.com/playlist/5KosoW91jvviXuN4I0ig7M)
 - playlist cover
 - supplemental photo

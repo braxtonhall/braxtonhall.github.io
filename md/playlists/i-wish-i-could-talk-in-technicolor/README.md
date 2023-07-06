@@ -17,6 +17,6 @@ DAD ROCK IN 2020 (named &quot;I know the name of the student&quot; until 2021.05
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/79C9QKMBYYv2jWp2hHxuJ5)
+- [spotify](https://open.spotify.com/playlist/79C9QKMBYYv2jWp2hHxuJ5)
 - playlist cover
 - supplemental photo

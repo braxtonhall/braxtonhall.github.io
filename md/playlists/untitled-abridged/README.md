@@ -27,6 +27,6 @@ Songs from a 2018 mixcd. #FFFFFF
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/03mSSoHNSPVtboPzfQNnvr)
+- [spotify](https://open.spotify.com/playlist/03mSSoHNSPVtboPzfQNnvr)
 - playlist cover
 - supplemental photo

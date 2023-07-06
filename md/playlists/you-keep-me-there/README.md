@@ -16,6 +16,6 @@ neither here nor there kinda playlist
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2Snc1vP0pkDQgTVQWplQLH)
+- [spotify](https://open.spotify.com/playlist/2Snc1vP0pkDQgTVQWplQLH)
 - playlist cover
 - supplemental photo

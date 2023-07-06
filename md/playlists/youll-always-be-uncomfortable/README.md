@@ -2,6 +2,24 @@
 
 see you eventually :)
 
+> this playlist was made for Sydney  
+> when we first met
+>
+> she said she didn't know any 80s pop classics
+>
+> I always resort to music and playlists  
+> when I don't know what to say
+>
+> "get to know someone"  
+> is too abstract
+>
+> "make a playlist"  
+> is perfectly small, actionable, and insignificant
+>
+> enjoy the pictures from Taiwan
+
+text written 2020 april 15
+
 ## track list
 
 1. "Bizarre Love Triangle - Shep Pettibone 12" Remix" by New Order; Stephen Morris
@@ -19,6 +37,6 @@ see you eventually :)
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/5hq1weoJv6yZw9SR3K2TcF)
-- playlist cover
-- supplemental photo
+- [spotify](https://open.spotify.com/playlist/5hq1weoJv6yZw9SR3K2TcF)
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

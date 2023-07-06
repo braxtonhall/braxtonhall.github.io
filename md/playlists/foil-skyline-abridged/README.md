@@ -19,6 +19,6 @@ High School Trash: Pocket Edition. Songs from a 2011 mixcd
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/4On6Wr8AgARQFPaZTP2Wwk)
+- [spotify](https://open.spotify.com/playlist/4On6Wr8AgARQFPaZTP2Wwk)
 - playlist cover
 - supplemental photo

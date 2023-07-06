@@ -15,6 +15,6 @@ endless work in progress
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/5b8a6AeDp1dKotwn3YrH0i)
+- [spotify](https://open.spotify.com/playlist/5b8a6AeDp1dKotwn3YrH0i)
 - playlist cover
 - supplemental photo

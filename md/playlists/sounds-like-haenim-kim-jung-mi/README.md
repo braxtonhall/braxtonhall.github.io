@@ -15,6 +15,6 @@ listen this is as upbeat as my music gets without synthesizers. hope you&#x27;re
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/0mhSPJZHh8OT9g7MX9KYmc)
+- [spotify](https://open.spotify.com/playlist/0mhSPJZHh8OT9g7MX9KYmc)
 - playlist cover
 - supplemental photo

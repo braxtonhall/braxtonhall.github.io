@@ -26,6 +26,6 @@ text written 2020 april 12
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/6EJRuSsAKQawNnAGPAiNzG)
+- [spotify](https://open.spotify.com/playlist/6EJRuSsAKQawNnAGPAiNzG)
 - [playlist cover](./cover.jpeg)
 - [supplemental photo](./supplement.jpeg)

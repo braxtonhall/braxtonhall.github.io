@@ -23,6 +23,6 @@ Music from and inspired by the critically acclaimed Summer hit, TRON: Legacy ðŸ”
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/1t0so1WQ5f2ugLsChyZg9e)
+- [spotify](https://open.spotify.com/playlist/1t0so1WQ5f2ugLsChyZg9e)
 - playlist cover
 - supplemental photo

@@ -14,6 +14,6 @@
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/6h883QDtZZsJU04ozaHvfY)
+- [spotify](https://open.spotify.com/playlist/6h883QDtZZsJU04ozaHvfY)
 - playlist cover
 - supplemental photo

@@ -166,6 +166,6 @@
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/5RAIELQp4ds1xlHAFBfeaw)
+- [spotify](https://open.spotify.com/playlist/5RAIELQp4ds1xlHAFBfeaw)
 - playlist cover
 - supplemental photo

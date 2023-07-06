@@ -22,6 +22,6 @@ this is a bad playlist
 
 ## links
 
-- [link to playlist](https://open.spotify.com/playlist/2JrBWwYK8Xsfoxl5nNsLrM)
+- [spotify](https://open.spotify.com/playlist/2JrBWwYK8Xsfoxl5nNsLrM)
 - playlist cover
 - supplemental photo
