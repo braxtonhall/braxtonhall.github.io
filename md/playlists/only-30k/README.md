@@ -1,5 +1,23 @@
 # only 30k?
 
+> Joel asked me to give a presentation to his high school students
+>
+> "it'll get them to think"
+>
+> narrativizing my life  
+> shouldn't have made me sick  
+> all my practice
+>
+> I am embarrassed I felt the pull  
+> to prove my accomplishments  
+> to children  
+> despite the CVs of my fellow guest speakers
+>
+> pictures from an evening with May in Munich  
+> question from a youth
+
+text written 2022 march 8
+
 ## track list
 
 1. "Vacation Bible School" by Ayesha Erotica
@@ -13,5 +31,5 @@
 ## links
 
 - [spotify](https://open.spotify.com/playlist/1L7FnB8OPWVGNQKhLBoVNb)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

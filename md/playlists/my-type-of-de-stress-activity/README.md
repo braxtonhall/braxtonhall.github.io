@@ -2,6 +2,23 @@
 
 Shamelessly borrowed from Touch This Skin, Honey
 
+> Aizhan came over to commiserate with me in Winter
+>
+> "you're so annoying" she said in the Chatime  
+> I had taken her photo without warning
+>
+> again
+>
+> the tea shop smelled sweet  
+> from the grass jelly  
+> the tea shop smelled sour  
+> from the milk
+>
+> I was blinded by the flash  
+> when she snuck a photo back
+
+text written 2021 october 17
+
 ## track list
 
 1. "Eeehhh" by SOPHIE
@@ -18,5 +35,5 @@ Shamelessly borrowed from Touch This Skin, Honey
 ## links
 
 - [spotify](https://open.spotify.com/playlist/3C0JhmmYK7sFujgw07wKa3)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)
