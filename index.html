@@ -137,8 +137,7 @@
 				}
 			};
 
-			const getPath = (suffix) =>
-				`https://raw.githubusercontent.com/braxtonhall/braxtonhall.github.io/main/${suffix}`;
+			const getPath = (suffix) => (suffix.startsWith("/") ? suffix : `/${suffix}`);
 
 			const getPage = (suffix) =>
 				fetch(getPath(suffix))
