@@ -11,7 +11,7 @@ WHY IS NABU CORFA NO LONGER AVAILABLE ON CANADIAN SPOTIFY?????????
 > here are some songs I like  
 > from coming home from Taiwan
 
-text written 2020 april 12
+text written 2020 april 11
 
 ## track list
 

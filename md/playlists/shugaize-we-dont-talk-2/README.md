@@ -1,4 +1,16 @@
-# shugaize[\?]\*: we don't talk 2
+# shugaize[\\\\?]\*: we don't talk 2
+
+> somebody once told me  
+> "we don't talk about anything?"  
+> and all I can think is  
+> "what's wrong with that?"
+>
+> I named this playlist after that
+>
+> I wanted to share these pictures  
+> of Sally and Tuya with you
+
+text written 2020 may 7
 
 ## track list
 
@@ -19,5 +31,5 @@
 ## links
 
 - [spotify](https://open.spotify.com/playlist/3ImMK11iuj2siRBYZPwE8e)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

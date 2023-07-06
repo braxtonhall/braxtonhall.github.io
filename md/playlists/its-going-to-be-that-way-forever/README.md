@@ -2,6 +2,24 @@
 
 To the moon and back.
 
+> you'd think I would have gotten over  
+> my fear of making people upset  
+> with all my self inflicted  
+> exposure therapy
+>
+> "I'm going to make some people very, very upset"  
+> I told her
+>
+> "it's going to be that way forever"  
+> she told me
+>
+> pictures from somewhere  
+> between Abbotsford and Chilliwack  
+> featuring Corey  
+> the hero of the hero's trip
+
+text written 2020 may 16
+
 ## track list
 
 1. "My Sputnik Sweetheart" by Weatherday
@@ -24,5 +42,5 @@ To the moon and back.
 ## links
 
 - [spotify](https://open.spotify.com/playlist/3d2emAKJdCBwN8JwMZ0rX6)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

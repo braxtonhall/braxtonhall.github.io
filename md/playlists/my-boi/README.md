@@ -2,6 +2,18 @@
 
 S I S T T T A R . playlist not final
 
+> friends of a friend of a friend
+>
+> special thanks to those who  
+> were letting a member of the worst demographic  
+> join their pride weekend celebrations  
+> in Seattle
+>
+> I don't remember anyone's name  
+> but I remember the mood
+
+text written 2020 april 27
+
 ## track list
 
 1. "Flashback" by Kelis
@@ -14,5 +26,5 @@ S I S T T T A R . playlist not final
 ## links
 
 - [spotify](https://open.spotify.com/playlist/6pIDsZ9orw7ENFQ5eYIDis)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

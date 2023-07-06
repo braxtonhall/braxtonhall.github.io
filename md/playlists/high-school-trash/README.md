@@ -2,6 +2,18 @@
 
 🔀
 
+> a few pictures from Macau  
+> where I was out of place  
+> where I just wanted to be back in Hong Kong
+>
+> here are some songs I had on my Zune  
+> the favourites from MSN to Skype
+>
+> when cultural capital was earned  
+> through indie bands
+
+text written 2020 may 8
+
 ## track list
 
 1. "Nantes" by Beirut
@@ -167,5 +179,5 @@
 ## links
 
 - [spotify](https://open.spotify.com/playlist/5RAIELQp4ds1xlHAFBfeaw)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

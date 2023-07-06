@@ -11,7 +11,7 @@ Alternate title: (Curtis Gerstendorfer I Love You) Since I Was Twenty-Two
 > I visited my great grandfather there  
 > he's 97(!!) and very tired
 
-text written 2020 April 10
+text written 2020 april 10
 
 ## track list
 

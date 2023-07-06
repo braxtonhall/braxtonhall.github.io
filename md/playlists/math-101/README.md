@@ -1,5 +1,27 @@
 # MATH 101
 
+> this picture was taken at dawn  
+> while waiting for Chris
+>
+> for months
+>
+> he would pick up the study group  
+> 7:00A at the latest
+>
+> he would drop us off  
+> 11:00P at the earliest
+>
+> and we worked
+>
+> how else were we supposed to learn math?
+>
+> this was the first playlist I made  
+> during lunch breaks in exam season
+>
+> and I'm still very fond of it
+
+text written 2020 april 30
+
 ## track list
 
 1. "Just Like a Baby" by Sly & The Family Stone
@@ -22,5 +44,5 @@
 ## links
 
 - [spotify](https://open.spotify.com/playlist/6FSmF3lRV3akPCdPOU0g7f)
-- playlist cover
+- [playlist cover](./cover.jpeg)
 - supplemental photo

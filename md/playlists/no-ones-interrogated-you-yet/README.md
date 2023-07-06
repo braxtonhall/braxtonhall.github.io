@@ -1,5 +1,25 @@
 # no one's interrogated you yet
 
+> our host Dave  
+> warmed up to us over coffee  
+> asking questions  
+> about the significant ones
+>
+> first Megha
+>
+> then Jackie
+>
+> then me  
+> too quiet in the corner
+>
+> "no one's interrogated you yet"
+>
+> I gave him a non-answer
+>
+> I could never admit to humanity
+
+text written 2020 august 14
+
 ## track list
 
 1. "Nikes" by Frank Ocean
@@ -13,5 +33,5 @@
 ## links
 
 - [spotify](https://open.spotify.com/playlist/3J591mzLqydpzGJfMMI0ah)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

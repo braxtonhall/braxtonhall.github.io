@@ -2,6 +2,28 @@
 
 notes: replace Sonique with Cascada?
 
+> this month I read countless TwitLongers  
+> detailing the misconduct of men  
+> in communities close to mine
+>
+> men who passed  
+> as community leaders  
+> as allies  
+> as "good"
+>
+> "you are good"
+>
+> "I really do hate all men  
+> except you"
+>
+> "you would make a great lesbian"
+>
+> men like me
+>
+> I feel heavy
+
+text written 2020 august 1
+
 ## track list
 
 1. "Sorry Bro (I Love You) - Himera Remix" by Dorian Electra; Himera
@@ -19,5 +41,5 @@ notes: replace Sonique with Cascada?
 ## links
 
 - [spotify](https://open.spotify.com/playlist/14OlwEygHOXTfpwZNsGVLY)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

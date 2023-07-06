@@ -2,6 +2,20 @@
 
 notes: Maybe replace Hum Pt. 2 with Hum Pt. 1?
 
+> named "runecrafting" after my roommate  
+> who is still runecrafting in RuneScape  
+> as you read this
+>
+> songs that describe mountains
+>
+> these pictures were taken just outside Geneva  
+> a stone's throw into France
+>
+> where I missed Dov and Evi  
+> who climbed with me the year before
+
+text written 2020 april 26
+
 ## track list
 
 1. "Proem" by Biosphere

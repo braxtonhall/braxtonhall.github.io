@@ -2,6 +2,24 @@
 
 The middle is a little shaken up wrt low&#x2F;high energy for the sake of flow. EDIT: ACTUALLY the first 8 songs fit the requirements and are my [submmission](../../secretdj/2019.md). The following 8 songs are extra credit.
 
+> on my last day in London  
+> Carver brought me back to the Tate
+>
+> we had only once met  
+> courtesy of Alisa in Amsterdam
+>
+> yet he took his time with me  
+> as if we had a storied friendship
+>
+> songs from a fourteen way  
+> playlist exchange
+>
+> the prompts  
+> "all songs instrumental"  
+> "first half high energy and second half low"
+
+text written 2020 may 5
+
 ## track list
 
 1. "Hanoi 1" by Unknown Mortal Orchestra
@@ -24,5 +42,5 @@ The middle is a little shaken up wrt low&#x2F;high energy for the sake of flow. 
 ## links
 
 - [spotify](https://open.spotify.com/playlist/2VzmuWR7301gvcBlgFypFt)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

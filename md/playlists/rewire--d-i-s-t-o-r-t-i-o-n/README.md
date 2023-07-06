@@ -2,6 +2,23 @@
 
 This playlist started SO STRONG :(
 
+> I was welcomed back to Canada  
+> by strangers
+>
+> a zeroth reunion picnic  
+> a goodbye for Gaby
+>
+> a hello to to be guests  
+> of a first reunion dinner
+>
+> pictures from a nervous night  
+> with new humans
+>
+> a playlist of stress  
+> for few playlists know pressure
+
+text written 2020 may 6
+
 ## track list
 
 1. "Psyche" by Massive Attack
@@ -16,5 +33,5 @@ This playlist started SO STRONG :(
 ## links
 
 - [spotify](https://open.spotify.com/playlist/0HGFCBAWG7gqDyAqbOoSgx)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

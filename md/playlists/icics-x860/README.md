@@ -2,6 +2,20 @@
 
 every day the same dream L M A O
 
+> songs for the late nights  
+> spent in the computer science building  
+> just trying to graduate
+>
+> eight years later and I'm still here  
+> I wonder if I've set a record
+>
+> these pictures were taken in London  
+> at a Jan Jelinek show
+>
+> right before I stopped going to shows
+
+text written 2020 april 28
+
 ## track list
 
 1. "No harm" by Smerz
@@ -19,5 +33,5 @@ every day the same dream L M A O
 ## links
 
 - [spotify](https://open.spotify.com/playlist/2BRXmYc75el9duSp6R4R0a)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

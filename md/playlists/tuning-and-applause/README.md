@@ -1,5 +1,22 @@
 # Tuning and Applause
 
+> pictures halfway through  
+> a bike ride across Munich  
+> with May  
+> who let me live  
+> in her already cramped dorm
+>
+> whom I somehow befriended  
+> despite being an antagonist of her youth
+>
+> I'm lucky I got her out of her lab  
+> for she is always very busy
+>
+> some songs I like  
+> better together than apart
+
+text written 2020 april 23
+
 ## track list
 
 1. "Playing Parties" by Daedelus
@@ -17,5 +34,5 @@
 ## links
 
 - [spotify](https://open.spotify.com/playlist/3MfpByhY8inMdfkiA2Jguu)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

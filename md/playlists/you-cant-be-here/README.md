@@ -2,6 +2,15 @@
 
 An old sketch combined with left over ideas from &quot;glyptothek: Abridged&quot;
 
+> this is everyone I ever met in London  
+> without a preexisting mutual
+>
+> one of the only two cities  
+> where strangers had no interest in making conversation  
+> unless they are American
+
+text written 2020 april 25
+
 ## track list
 
 1. "Leyendecker" by Battles
@@ -17,5 +26,5 @@ An old sketch combined with left over ideas from &quot;glyptothek: Abridged&quot
 ## links
 
 - [spotify](https://open.spotify.com/playlist/28Xl6doCEIVku4Cwl8HebN)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpg)
+- [supplemental photo](./supplement.jpg)

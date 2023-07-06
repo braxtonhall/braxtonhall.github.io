@@ -1,5 +1,10 @@
 # Good Morning America!
 
+> I finished my undergrad today  
+> some songs for the mood
+
+text written 2020 april 29
+
 ## track list
 
 1. "Apollo Throwdown" by The Go! Team
@@ -13,5 +18,5 @@
 ## links
 
 - [spotify](https://open.spotify.com/playlist/2vFCp7tK8iAhg3Tn0SxjwS)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

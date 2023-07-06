@@ -1,5 +1,22 @@
 # Fairies in a Manhole
 
+> trying to be supportive  
+> Halina asked me to imagine
+>
+> walking by fairies in a manhole  
+> who came up to snatch my wanting
+>
+> but I think I liked the wanting  
+> wanting for time  
+> wanting for humans
+>
+> little was a self indulgent  
+> as melancholy
+>
+> another glance at Beijing
+
+text written 2020 may 4
+
 ## track list
 
 1. "Otherside" by Perfume Genius
@@ -12,5 +29,5 @@
 ## links
 
 - [spotify](https://open.spotify.com/playlist/6VtaBNTDTwhXvAnG1CIfjo)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

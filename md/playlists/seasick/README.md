@@ -1,5 +1,22 @@
 # seasick
 
+> I met Jeremy in Hong Kong  
+> where these pictures were taken
+>
+> he was a sweet kid  
+> who had night blindness
+>
+> we always knew when sunset was  
+> when we were with him
+>
+> he put his hands on your shoulders  
+> and trusted you when it was dark
+>
+> I've broken a lot of promises  
+> to stay in touch
+
+text written 2020 may 2
+
 ## track list
 
 1. "Summer Madness" by Kool & The Gang
@@ -17,5 +34,5 @@
 ## links
 
 - [spotify](https://open.spotify.com/playlist/2fzCX7osodgcruBFvbqo91)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

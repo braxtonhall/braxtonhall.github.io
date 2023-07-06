@@ -1,5 +1,25 @@
 # rrstless
 
+> in Kota Kinabalu I stayed with family  
+> who were afraid to let me out
+>
+> I wasn't to leave the side  
+> of my distant cousin  
+> sixteen year old Nathan
+>
+> I didn't expect him to  
+> disable the alarm  
+> help me sneak out
+>
+> songs from one of the first nights  
+> back in Canada
+>
+> restless from the jetlag  
+> restless from the excitement  
+> homesick for someone else's home
+
+text written 2020 may 3
+
 ## track list
 
 1. "Soon-To-Be Innocent Fun/Let's See" by Arthur Russell
@@ -17,5 +37,5 @@
 ## links
 
 - [spotify](https://open.spotify.com/playlist/2Zclu1X1sHqpLXQ3qSt4Vw)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)

@@ -2,6 +2,21 @@
 
 BM. B-BM. CHK.
 
+> Steven put me in contact with all of his friends from  
+> his time teaching in Beijing before I got there
+>
+> they all called him "Steve"
+>
+> I have felt conflicted about Steven  
+> for he has hurt so many people  
+> but not me
+>
+> "Steve is a good guy" Hao told me
+>
+> I felt like I was tracing the footsteps of his better life
+
+text written 2020 may 1
+
 ## track list
 
 1. "Vox Humana" by Deerhunter
@@ -18,5 +33,5 @@ BM. B-BM. CHK.
 ## links
 
 - [spotify](https://open.spotify.com/playlist/1oLthjuVkKR0J3BlCGn3GC)
-- playlist cover
-- supplemental photo
+- [playlist cover](./cover.jpeg)
+- [supplemental photo](./supplement.jpeg)
