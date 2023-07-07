@@ -130,7 +130,7 @@
 			const selectFile = () => {
 				if (window.location.hash.length > 1) {
 					const path = window.location.hash.replace("#", "");
-					history.pushState({page: 1}, "Redirecting", path);
+					history.replaceState({path}, "Redirecting", path);
 					return path.replace(/\.pretty/, "");
 				} else {
 					return "README.md";
