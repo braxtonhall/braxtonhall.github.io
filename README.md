@@ -4,4 +4,4 @@ currently into [watching movies](https://letterboxd.com/braxtonhall/). i will pr
 - [secret dj archive](./md/secretdj/README.md)
 - [home movie archive](./md/home-movies.md)
 - [playlist archive](./md/playlists/README.md)
-- [star trek progress](https://docs.google.com/spreadsheets/d/1NaLUipHe_Urd6mruBPDloQdYd38xll-BAJkcm4aSIYE)
+- [star trek progress](http://st.braxtonhall.ca)
