@@ -126,7 +126,7 @@
 				if (window.location.hash.length > 1) {
 					const path = window.location.hash.replace("#", "");
 					history.replaceState({path}, "Redirecting", path);
-					return `${path}.md`;
+					return path.replace(/\.pretty/, "");
 				} else {
 					return "README.md";
 				}
@@ -196,7 +196,7 @@
 					const $element = $(element);
 					const href = $element.attr("href");
 					if (href.endsWith(".md")) {
-						$element.attr("href", href.replace(/\.md$/, ""));
+						$element.attr("href", `${href}.pretty`);
 					}
 				});
 				$("h1, h2, h3, h4").each((_, element) => {
