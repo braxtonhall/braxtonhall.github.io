@@ -8,9 +8,9 @@ a playlist sharing game
 
 we played this game with six times over five years. let this archive be the game's tombstone
 
-- [2023](./2023.md)
-- [2022](./2022.md)
-- [2021, again](./2021-2.md)
-- [2021](./2021.md)
-- [2020](./2020.md)
-- [2019](./2019.md)
+- [2023](./secretdj/2023.md)
+- [2022](./secretdj/2022.md)
+- [2021, again](./secretdj/2021-2.md)
+- [2021](./secretdj/2021.md)
+- [2020](./secretdj/2020.md)
+- [2019](./secretdj/2019.md)
