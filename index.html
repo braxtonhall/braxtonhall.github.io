@@ -126,13 +126,14 @@
 				if (window.location.hash.length > 1) {
 					const path = window.location.hash.replace("#", "");
 					history.replaceState({path}, "Redirecting", path);
-					return path.replace(/\.mdx$/, ".md");
+					return `${path}.md`;
 				} else {
 					return "README.md";
 				}
 			};
 
-			const getPath = (suffix) => (suffix.startsWith("/") ? suffix : `/${suffix}`);
+			const getPath = (suffix) =>
+				`https://raw.githubusercontent.com/braxtonhall/braxtonhall.github.io/main/${suffix}`;
 
 			const getPage = (suffix) =>
 				fetch(getPath(suffix))
@@ -196,7 +197,7 @@
 					const $element = $(element);
 					const href = $element.attr("href");
 					if (href.endsWith(".md")) {
-						$element.attr("href", href.replace(/\.md$/, ".mdx"));
+						$element.attr("href", href.replace(/\.md$/, ""));
 					}
 				});
 				$("h1, h2, h3, h4").each((_, element) => {
