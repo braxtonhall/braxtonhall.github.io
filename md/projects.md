@@ -3,6 +3,9 @@
 - 2022 - [Better LibraryThing](https://betterlibrarything.com/)  
   a browser extension to improve the [librarything](https://www.librarything.com/) cataloguing experience. made in support of the [vancouver black library](https://www.vancouverblacklibrary.org/)
 
+- 2022 - [fib](https://fib.directory)
+  a collaborative art project with the ubc computer science department (and friends). you should be a part of it too
+
 - 2021 - [CRDTree](https://github.com/iyht/CRDTree)  
   a conflict-free replicated datatype implementation with support for complex datatypes and a git-like workflows. we also designed and implemented a network protocol to go with it
 

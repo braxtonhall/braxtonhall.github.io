@@ -7,4 +7,4 @@ if you're here looking for the _tenure tracks_ radio programme, it is on indefin
 - [playlist archive](./md/playlists.md)
 - [star trek progress](http://st.braxtonhall.ca)
 - [selected projects](./md/projects.md)
-- [fib](https://fib.directory)
+- [web rings](./md/rings.md)
