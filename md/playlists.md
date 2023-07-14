@@ -1,7 +1,16 @@
 # playlist archive
 
+<details>
+<summary>2023 (2)</summary>
+
 - [insomnia](./playlists/insomnia/info.md)
 - [you keep me there](./playlists/you-keep-me-there/info.md)
+
+</details>
+
+<details>
+<summary>2022 (11)</summary>
+
 - [BEIGE SKIN, BLACK MASKS](./playlists/beige-skin-black-masks/info.md)
 - [165+13ish](./playlists/16513ish/info.md)
 - [The Will to Change](./playlists/the-will-to-change/info.md)
@@ -13,6 +22,12 @@
 - [only 30k?](./playlists/only-30k/info.md)
 - [RENAISSANCE MAN](./playlists/renaissance-man/info.md)
 - [What up, Party POPL?](./playlists/what-up-party-popl/info.md)
+
+</details>
+
+<details>
+<summary>2021 (13)</summary>
+
 - [Much less nebulous!!!](./playlists/much-less-nebulous/info.md)
 - [grad student mafia](./playlists/grad-student-mafia/info.md)
 - [THOSE WERE THE DAYS](./playlists/those-were-the-days/info.md)
@@ -26,6 +41,12 @@
 - [Mediocre Men](./playlists/mediocre-men/info.md)
 - [then just say it!](./playlists/then-just-say-it/info.md)
 - ["sounds like haenim kim jung mi"](./playlists/sounds-like-haenim-kim-jung-mi/info.md)
+
+</details>
+
+<details>
+<summary>2020 (24)</summary>
+
 - [1 in 7 trillion](./playlists/1-in-7-trillion/info.md)
 - [It's going to be that way forever!](./playlists/its-going-to-be-that-way-forever/info.md)
 - [On the Road](./playlists/on-the-road/info.md)
@@ -50,6 +71,12 @@
 - [Not that you have any intentions](./playlists/not-that-you-have-any-intentions/info.md)
 - [call him 'bb'](./playlists/call-him-bb/info.md)
 - [(thanks)](./playlists/thanks/info.md)
+
+</details>
+
+<details>
+<summary>2019 (28)</summary>
+
 - [ARTH 341](./playlists/arth-341/info.md)
 - [(Rosalind Krauss I Love You) Since I Was Twenty-Five](./playlists/rosalind-krauss-i-love-you-since-i-was-twenty-five/info.md)
 - [I liked you better when you were heartbroken.](./playlists/i-liked-you-better-when-you-were-heartbroken/info.md)
@@ -78,6 +105,12 @@
 - ["sup" - some pigeon](./playlists/sup---some-pigeon/info.md)
 - [Arbutus Greenway](./playlists/arbutus-greenway/info.md)
 - [you'll always be uncomfortable](./playlists/youll-always-be-uncomfortable/info.md)
+
+</details>
+
+<details>
+<summary>2018 (29)</summary>
+
 - [hori zon](./playlists/hori-zon/info.md)
 - [we don't talk about anything](./playlists/we-dont-talk-about-anything/info.md)
 - [no one's interrogated you yet](./playlists/no-ones-interrogated-you-yet/info.md)
@@ -107,8 +140,16 @@
 - [layover](./playlists/layover/info.md)
 - [CPSC 310](./playlists/cpsc-310/info.md)
 - [MATH 101](./playlists/math-101/info.md)
+
+</details>
+
+<details>
+<summary>2017 (3)</summary>
+
 - [SIKE](./playlists/sike/info.md)
 - [Hello Again!](./playlists/hello-again/info.md)
 - [we wouldn't want them to be confused](./playlists/we-wouldnt-want-them-to-be-confused/info.md)
+
+</details>
 
 archive created 2023 july 6
