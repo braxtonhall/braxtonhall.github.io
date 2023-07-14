@@ -172,15 +172,14 @@
 						const href = $element.attr("href");
 						if (isInlineable($element)) {
 							$element.css({display: "none"});
-							const filePath = join(relativeTo, href);
-							return getPage(filePath)
+							return getPage(href)
 								.then((render) => {
 									const $render = $(render);
 									$element.replaceWith($render);
 									return $render;
 								})
 								.then(fixLinks(relativeTo))
-								.then(inlinePages(folder(filePath)));
+								.then(inlinePages(folder(href)));
 						}
 					})
 				).then(() => $parent);
