@@ -165,23 +165,22 @@
 				}
 			};
 
-			const inlinePages = (relativeTo) => ($parent) =>
+			const inlinePages = (relativeTo, $parent) =>
 				Promise.all(
-					$parent.find("a").map(async (_, element) => {
-						const $element = $(element);
-						const href = $element.attr("href");
-						if (isInlineable($element)) {
-							$element.css({display: "none"});
-							return getPage(href)
-								.then((render) => {
+					fixLinks(relativeTo, $parent)
+						.find("a")
+						.map(async (_, element) => {
+							const $element = $(element);
+							const href = $element.attr("href");
+							if (isInlineable($element)) {
+								$element.css({display: "none"});
+								return getPage(href).then((render) => {
 									const $render = $(render);
 									$element.replaceWith($render);
-									return $render;
-								})
-								.then(fixLinks(relativeTo))
-								.then(inlinePages(folder(href)));
-						}
-					})
+									return inlinePages(folder(href), $render);
+								});
+							}
+						})
 				).then(() => $parent);
 
 			const evalCode = ($parent) => {
@@ -210,7 +209,7 @@
 
 			const isInlineable = ($element) => $element.text() === "#inline" && $element.attr("href").endsWith(".md");
 
-			const fixLinks = (relativeTo) => ($parent) => {
+			const fixLinks = (relativeTo, $parent) => {
 				$parent.find("a, area, base, link").each((_, element) => {
 					const $element = $(element);
 					const href = resolveHref(relativeTo, $element.attr("href"));
@@ -242,9 +241,7 @@
 			const $main = $("main");
 			Promise.all([
 				getPage(selectedFile)
-					.then((render) => $main.html(render))
-					.then(fixLinks(enclosingFolder))
-					.then(inlinePages(enclosingFolder))
+					.then((render) => inlinePages(enclosingFolder, $main.html(render)))
 					.then(evalCode),
 				getPage("md/header.md").then((render) => $("#header").html(render)),
 			]).finally(() => $main.show());
