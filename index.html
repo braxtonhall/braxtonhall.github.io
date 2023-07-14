@@ -170,7 +170,7 @@
 					$parent.find("a").map(async (_, element) => {
 						const $element = $(element);
 						const href = $element.attr("href");
-						if ($element.text() === "#inline" && href.endsWith(".md")) {
+						if (isInlineable($element)) {
 							$element.css({display: "none"});
 							const filePath = join(relativeTo, href);
 							return getPage(filePath)
@@ -179,6 +179,7 @@
 									$element.replaceWith($render);
 									return $render;
 								})
+								.then(fixLinks(relativeTo))
 								.then(inlinePages(folder(filePath)));
 						}
 					})
@@ -204,15 +205,23 @@
 						document.head.appendChild(style);
 					});
 
-			const fixLinks = () => {
-				$("a").each((_, element) => {
+			const isAbsolutePath = (href) => href.startsWith("/") || /^[^\/]*:\/\//.test(href);
+
+			const resolveHref = (relativeTo, href) => (isAbsolutePath(href) ? href : join(relativeTo, href));
+
+			const isInlineable = ($element) => $element.text() === "#inline" && $element.attr("href").endsWith(".md");
+
+			const fixLinks = (relativeTo) => ($parent) => {
+				$parent.find("a").each((_, element) => {
 					const $element = $(element);
-					const href = $element.attr("href");
-					if (href.endsWith(".md")) {
+					const href = resolveHref(relativeTo, $element.attr("href"));
+					if (href.endsWith(".md") && !isInlineable($element)) {
 						$element.attr("href", href.replace(/\.md$/, ".render"));
+					} else {
+						$element.attr("href", href);
 					}
 				});
-				$("h1, h2, h3, h4").each((_, element) => {
+				$parent.find("h1, h2, h3, h4").each((_, element) => {
 					const $element = $(element);
 					const text = $element.text();
 					const id = text
@@ -221,6 +230,7 @@
 						.replace(/[^0-9a-z-]/g, "");
 					$element.attr("id", id);
 				});
+				return $parent;
 			};
 
 			const selectedFile = selectFile();
@@ -231,9 +241,7 @@
 					.then(inlinePages(folder(selectedFile)))
 					.then(evalCode),
 				getPage("md/header.md").then((render) => $("#header").html(render)),
-			])
-				.finally(fixLinks)
-				.finally(() => $main.show());
+			]).finally(() => $main.show());
 		</script>
 	</body>
 </html>
