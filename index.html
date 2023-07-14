@@ -15,6 +15,12 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it-footnote/3.0.3/markdown-it-footnote.min.js"
+			integrity="sha512-hKiRGx002Z2n8LGMKRResAVuZkDwZ9/7CdrbZbIldJyZ6MtKHHCzt6v8Inn1nFOsANUmx/avKIkc6O5MGEDP4Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<style>
 			body {
@@ -126,8 +132,10 @@
 		<header id="header"></header>
 		<main></main>
 		<script>
+			const md = window.markdownit({html: true}).use(window.markdownitFootnote);
+
 			const selectFile = () => {
-				if (window.location.hash.length > 1) {
+				if (window.location.hash.length > 1 && window.location.hash.endsWith(".render")) {
 					const path = window.location.hash.replace("#", "");
 					history.replaceState({path}, "Redirecting", path);
 					return path.replace(/\.render$/, ".md");
@@ -142,7 +150,7 @@
 			const getPage = (suffix) =>
 				fetch(getPath(suffix))
 					.then((response) => response.text())
-					.then((text) => window.markdownit({html: true}).render(text));
+					.then((text) => md.render(text));
 
 			const folder = (path) => path.split("/").slice(0, -1).join("/") || ".";
 			const descend = (path) => path.split("/").slice(1).join("/");
