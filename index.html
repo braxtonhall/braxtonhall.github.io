@@ -212,7 +212,7 @@
 			const isInlineable = ($element) => $element.text() === "#inline" && $element.attr("href").endsWith(".md");
 
 			const fixLinks = (relativeTo) => ($parent) => {
-				$parent.find("a").each((_, element) => {
+				$parent.find("a, area, base, link").each((_, element) => {
 					const $element = $(element);
 					const href = resolveHref(relativeTo, $element.attr("href"));
 					if (href.endsWith(".md") && !isInlineable($element)) {
@@ -239,11 +239,13 @@
 			};
 
 			const selectedFile = selectFile();
+			const enclosingFolder = folder(selectedFile);
 			const $main = $("main");
 			Promise.all([
 				getPage(selectedFile)
 					.then((render) => $main.html(render))
-					.then(inlinePages(folder(selectedFile)))
+					.then(fixLinks(enclosingFolder))
+					.then(inlinePages(enclosingFolder))
 					.then(evalCode),
 				getPage("md/header.md").then((render) => $("#header").html(render)),
 			]).finally(() => $main.show());
