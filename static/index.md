@@ -2,9 +2,9 @@ currently into [watching movies](https://letterboxd.com/braxtonhall/). i will pr
 
 if you're here looking for the _tenure tracks_ radio programme, it is on indefinite hold
 
-- [secret dj archive](./md/secretdj.md)
-- [home movie archive](./md/home-movies.md)
-- [playlist archive](./md/playlists.md)
+- [secret dj archive](./secretdj.md)
+- [home movie archive](./home-movies.md)
+- [playlist archive](./playlists.md)
 - [star trek progress](http://st.braxtonhall.ca)
-- [selected projects](./md/projects.md)
-- [web rings](./md/rings.md)
+- [selected projects](./projects.md)
+- [web rings](./rings.md)

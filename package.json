@@ -3,12 +3,18 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"build": "ts-node build-site.ts"
 	},
 	"devDependencies": {
+		"@types/fs-extra": "^11.0.1",
+		"@types/node": "^20.4.4",
+		"fs-extra": "^11.1.1",
 		"husky": ">=6",
 		"lint-staged": ">=10",
-		"prettier": "^2.8.8"
+		"prettier": "^2.8.8",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.1.6"
 	},
 	"lint-staged": {
 		"*.{js,css,md,html}": "prettier --write"

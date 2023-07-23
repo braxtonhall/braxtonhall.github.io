@@ -140,12 +140,12 @@
 					history.replaceState({path}, "Redirecting", path);
 					return path.replace(/\.render$/, ".md");
 				} else {
-					return "README.md";
+					return "index.md";
 				}
 			};
 
 			const getPath = (suffix) =>
-				`https://raw.githubusercontent.com/braxtonhall/braxtonhall.github.io/main/${suffix}`;
+				`https://raw.githubusercontent.com/braxtonhall/braxtonhall.github.io/gh-pages/${suffix}`;
 
 			const getPage = (suffix) =>
 				fetch(getPath(suffix))
@@ -243,7 +243,7 @@
 				getPage(selectedFile)
 					.then((render) => inlinePages(enclosingFolder, $main.html(render)))
 					.then(evalCode),
-				getPage("md/header.md").then((render) => $("#header").html(render)),
+				getPage("header.md").then((render) => $("#header").html(render)),
 			]).finally(() => $main.show());
 		</script>
 	</body>
