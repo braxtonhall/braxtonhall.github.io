@@ -2,4 +2,4 @@
 
 - [github](https://github.com/braxtonhall)
 - [linkedin](https://www.linkedin.com/in/braxton-hall-b49718170/)
-- [home](https://braxtonhall.ca/)
+- [home](/)
