@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="a website by braxton hall" />
+		<link rel="apple-touch-icon" href="/img/icon128.png" />
+
+		<title>Braxton Hall</title>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"
+			integrity="sha512-SYfDUYPg5xspsG6OOpXU366G8SZsdHOhqk/icdrYJ2E/WKZxPxze7d2HD3AyXpT7U22PZ5y74xRpqZ6A2bJ+kQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it-footnote/3.0.3/markdown-it-footnote.min.js"
+			integrity="sha512-hKiRGx002Z2n8LGMKRResAVuZkDwZ9/7CdrbZbIldJyZ6MtKHHCzt6v8Inn1nFOsANUmx/avKIkc6O5MGEDP4Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<style>
+			body {
+				margin: 50px auto;
+				max-width: 1000px;
+				position: relative;
+				text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.5);
+				text-rendering: optimizeLegibility;
+				font: 0.9em/1.3em Georgia, serif;
+				-webkit-font-smoothing: subpixel-antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			a,
+			a:visited,
+			a:hover {
+				color: blue;
+				text-shadow: 0 0 0.1px rgba(255, 0, 0, 0.5);
+			}
+
+			blockquote {
+				margin-inline-start: 5px;
+				margin-inline-end: 5px;
+				color: gray;
+			}
+
+			main {
+				display: none;
+				max-width: 500px;
+				margin: 0 20px;
+				margin-top: 25px;
+			}
+
+			h1,
+			h2,
+			h3,
+			li,
+			summary,
+			p {
+				font-weight: normal;
+				font-size: 13px;
+			}
+
+			summary {
+				font-style: italic;
+			}
+
+			header,
+			footer {
+				text-align: right;
+				margin: 0;
+				margin-right: 20px;
+			}
+
+			ul {
+				padding-inline-start: 12px;
+			}
+
+			ol {
+				padding-inline-start: 12px;
+			}
+
+			header li {
+				list-style: none;
+			}
+
+			@media only screen and (min-width: 600px) {
+				header,
+				footer {
+					position: absolute;
+					right: 0;
+				}
+
+				header {
+					top: 0;
+				}
+
+				footer {
+					bottom: 0;
+				}
+
+				main {
+					margin-top: 0;
+					margin-right: 200px;
+				}
+			}
+			header > * {
+				margin: 0;
+			}
+			main > h1:after {
+				content: " ";
+				display: block;
+				border: 0.1px solid lightgray;
+			}
+			img {
+				margin-bottom: 2em;
+				max-width: 100%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			code.language-eval,
+			code.language-style {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="header"></header>
+		<main></main>
+		<script>
+			const md = window.markdownit({html: true}).use(window.markdownitFootnote);
+
+			const selectFile = () => {
+				if (window.location.hash.length > 1 && window.location.hash.endsWith(".render")) {
+					const path = window.location.hash.replace("#", "");
+					history.replaceState({path}, "Redirecting", path);
+					return path.replace(/\.render$/, ".md");
+				} else {
+					return "index.md";
+				}
+			};
+
+			const getPath = (suffix) =>
+				`https://raw.githubusercontent.com/braxtonhall/braxtonhall.github.io/gh-pages/${suffix}`;
+
+			const getPage = (suffix) =>
+				fetch(getPath(suffix))
+					.then((response) => response.text())
+					.then((text) => md.render(text));
+
+			const folder = (path) => path.split("/").slice(0, -1).join("/") || ".";
+			const descend = (path) => path.split("/").slice(1).join("/");
+
+			const join = (pathA, pathB) => {
+				if (pathB.startsWith("./")) {
+					return join(pathA, descend(pathB));
+				} else if (pathB.startsWith("../")) {
+					return join(folder(pathA), descend(pathB));
+				} else {
+					return `${pathA}/${pathB}`;
+				}
+			};
+
+			const inlinePages = (relativeTo, $parent) =>
+				Promise.all(
+					fixLinks(relativeTo, $parent)
+						.find("a")
+						.map(async (_, element) => {
+							const $element = $(element);
+							const href = $element.attr("href");
+							if (isInlineable($element)) {
+								$element.css({display: "none"});
+								return getPage(href).then((render) => {
+									const $render = $(render);
+									$element.replaceWith($render);
+									return inlinePages(folder(href), $render);
+								});
+							}
+						})
+				).then(() => $parent);
+
+			const evalCode = ($parent) => {
+				const $code = $parent.find("code");
+				evalScripts($code);
+				evalStyle($code);
+			};
+
+			const evalScripts = ($code) =>
+				$code
+					.filter((_, element) => element.classList.contains("language-eval"))
+					.each((_, element) => eval(element.textContent));
+
+			const evalStyle = ($code) =>
+				$code
+					.filter((_, element) => element.classList.contains("language-style"))
+					.each((_, element) => {
+						const style = document.createElement("style");
+						style.innerHTML = element.textContent;
+						document.head.appendChild(style);
+					});
+
+			const isAbsolutePath = (href) => href.startsWith("/") || /^[^\/]*:\/\//.test(href);
+
+			const resolveHref = (relativeTo, href) => (isAbsolutePath(href) ? href : join(relativeTo, href));
+
+			const isInlineable = ($element) => $element.text() === "#inline" && $element.attr("href").endsWith(".md");
+
+			const fixLinks = (relativeTo, $parent) => {
+				$parent.find("a, area, base, link").each((_, element) => {
+					const $element = $(element);
+					const href = resolveHref(relativeTo, $element.attr("href"));
+					if (href.endsWith(".md") && !isInlineable($element)) {
+						$element.attr("href", href.replace(/\.md$/, ".render"));
+					} else {
+						$element.attr("href", href);
+					}
+				});
+				$parent.find("audio, embed, iframe, img, input, script, source, track, video").each((_, element) => {
+					const $element = $(element);
+					const src = resolveHref(relativeTo, $element.attr("src"));
+					$element.attr("src", src);
+				});
+				$parent.find("h1, h2, h3, h4").each((_, element) => {
+					const $element = $(element);
+					const text = $element.text();
+					const id = text
+						.toLowerCase()
+						.replace(/ /g, "-")
+						.replace(/[^0-9a-z-]/g, "");
+					$element.attr("id", id);
+				});
+				return $parent;
+			};
+
+			const selectedFile = selectFile();
+			const enclosingFolder = folder(selectedFile);
+			const $main = $("main");
+			Promise.all([
+				getPage(selectedFile)
+					.then((render) => inlinePages(enclosingFolder, $main.html(render)))
+					.then(evalCode),
+				getPage("header.md").then((render) => $("#header").html(render)),
+			]).finally(() => $main.show());
+		</script>
+	</body>
+</html>
