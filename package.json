@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"prepare": "husky install",
-		"build": "ts-node build-site.ts"
+		"build": "ts-node scripts/build-site.ts"
 	},
 	"devDependencies": {
 		"@types/fs-extra": "^11.0.1",
