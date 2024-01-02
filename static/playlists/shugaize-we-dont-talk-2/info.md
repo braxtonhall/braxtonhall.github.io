@@ -1,7 +1,7 @@
 # shugaize[\\\\?]\*: we don't talk 2
 
 > somebody once told me  
-> "we don't talk about anything?"  
+> "we don't talk about anything"  
 > and all I can think is  
 > "what's wrong with that?"
 >
