@@ -1,6 +1,10 @@
 # playlist archive
 
 <details>
+<summary>2024 (0)</summary>
+</details>
+
+<details>
 <summary>2023 (2)</summary>
 
 - [insomnia](./playlists/insomnia/info.md)
@@ -153,3 +157,4 @@
 </details>
 
 archive created 2023 july 6
+last updated 2024 march 3
