@@ -183,7 +183,7 @@
 							const href = $element.attr("href");
 							if (isInlineable($element)) {
 								$element.css({display: "none"});
-								return getPage(href).then((render) => {
+								return getPage(join(enclosingFolder, href)).then((render) => {
 									const $render = $(render);
 									$element.replaceWith($render);
 									return inlinePages(folder(href), $render);
@@ -246,6 +246,7 @@
 			};
 
 			const selectedFile = selectFile();
+			const enclosingFolder = folder(selectedFile);
 			const $main = $("main");
 			Promise.all([
 				getPage(selectedFile)
