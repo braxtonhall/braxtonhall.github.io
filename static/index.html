@@ -152,14 +152,23 @@
 					.then((response) => response.text())
 					.then((text) => md.render(text));
 
-			const folder = (path) => path.split("/").slice(0, -1).join("/") || ".";
-			const descend = (path) => path.split("/").slice(1).join("/");
+			const folder = (path) => {
+				if (path === ".") {
+					return "..";
+				} else if (path === ".." || path.endsWith("/..")) {
+					return `${path}/..`;
+				} else {
+					return path.split("/").slice(0, -1).join("/") || ".";
+				}
+			};
 
 			const join = (pathA, pathB) => {
-				if (pathB.startsWith("./")) {
-					return join(pathA, descend(pathB));
+				if (pathA === ".") {
+					return pathB;
+				} else if (pathB.startsWith("./")) {
+					return join(pathA, pathB.replace("./", ""));
 				} else if (pathB.startsWith("../")) {
-					return join(folder(pathA), descend(pathB));
+					return join(folder(pathA), pathB.replace("../", ""));
 				} else {
 					return `${pathA}/${pathB}`;
 				}
@@ -174,7 +183,7 @@
 							const href = $element.attr("href");
 							if (isInlineable($element)) {
 								$element.css({display: "none"});
-								return getPage(href).then((render) => {
+								return getPage(join(enclosingFolder, href)).then((render) => {
 									const $render = $(render);
 									$element.replaceWith($render);
 									return inlinePages(folder(href), $render);
@@ -241,7 +250,7 @@
 			const $main = $("main");
 			Promise.all([
 				getPage(selectedFile)
-					.then((render) => inlinePages(enclosingFolder, $main.html(render)))
+					.then((render) => inlinePages(".", $main.html(render)))
 					.then(evalCode),
 				getPage("header.md").then((render) => $("#header").html(render)),
 			]).finally(() => $main.show());
