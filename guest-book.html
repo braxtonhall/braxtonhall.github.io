@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="a website by braxton hall" />
+		<link rel="apple-touch-icon" href="/img/icon128.png" />
+
+		<title>Braxton Hall</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<style>
+			body {
+				margin: 50px auto;
+				max-width: 1000px;
+				position: relative;
+				text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.5);
+				text-rendering: optimizeLegibility;
+				font: 0.9em/1.3em Georgia, serif;
+				-webkit-font-smoothing: subpixel-antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			a,
+			a:visited,
+			a:hover {
+				color: blue;
+				text-shadow: 0 0 0.1px rgba(255, 0, 0, 0.5);
+			}
+
+			blockquote {
+				margin-inline-start: 5px;
+				margin-inline-end: 5px;
+				color: gray;
+			}
+
+			main {
+				display: none;
+				max-width: 500px;
+				margin: 0 20px;
+				margin-top: 25px;
+			}
+
+			h1,
+			h2,
+			h3,
+			li,
+			summary,
+			p {
+				font-weight: normal;
+				font-size: 13px;
+			}
+
+			summary {
+				font-style: italic;
+			}
+
+			header,
+			footer {
+				text-align: right;
+				margin: 0;
+				margin-right: 20px;
+			}
+
+			ul {
+				padding-inline-start: 12px;
+			}
+
+			ol {
+				padding-inline-start: 12px;
+			}
+
+			header li {
+				list-style: none;
+			}
+
+			@media only screen and (min-width: 600px) {
+				header,
+				footer {
+					position: absolute;
+					right: 0;
+				}
+
+				header {
+					top: 0;
+				}
+
+				footer {
+					bottom: 0;
+				}
+
+				main {
+					margin-top: 0;
+					margin-right: 200px;
+				}
+			}
+			header > * {
+				margin: 0;
+			}
+			main > h1:after {
+				content: " ";
+				display: block;
+				border: 0.1px solid lightgray;
+			}
+			img {
+				margin-bottom: 2em;
+				max-width: 100%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			code.language-eval,
+			code.language-style {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="header"></header>
+		<h1>bob's book</h1>
+		<hr />
+
+		<label for="new-content">message</label>
+		<textarea id="new-content"></textarea>
+		<label for="new-from">from</label>
+		<input id="new-from" />
+		<br />
+		<button id="submit">submit</button>
+
+		<ul id="posts"></ul>
+		<button id="more" disabled data-cursor>more</button>
+
+		<script>
+			// TODO add a showDead feature
+			const url = "http://128.140.96.58:3000/boxes/cltltynki0001jxe9ahmz9rtp/posts";
+			const $more = $("#more");
+			const $posts = $("#posts");
+			const $content = $("#new-content");
+			const $from = $("#new-from");
+			const $submit = $("#submit");
+
+			const getPosts = (cursor) =>
+				fetch(`${url}?${cursor ? new URLSearchParams({cursor}) : ""}`)
+					.then((response) => response.json())
+					.catch(() => ({posts: []}));
+
+			const submitPost = (post) =>
+				fetch({
+					url,
+					method: "POST",
+					body: JSON.stringify(post),
+				}).then((result) => result.json()); // TODO .then prepend comment!!!
+
+			const appendPosts = async () => {
+				const {posts, cursor} = await getPosts($more.data("cursor"));
+				for (const post of posts) {
+					const $post = $("<li></li>").text(`${post.content} - ${post.from}`);
+					$posts.append($post);
+				}
+				if (cursor) {
+					$more.attr("disabled", false);
+					$more.data("cursor", cursor);
+				} else {
+					$more.attr("disabled", true);
+				}
+			};
+
+			const onSubmit = () => {
+				const content = $content.val();
+				const from = $from.val();
+				return submitPost({content, from});
+			};
+
+			$more.on("click", appendPosts);
+			$submit.on("click", onSubmit);
+			appendPosts();
+		</script>
+	</body>
+</html>
