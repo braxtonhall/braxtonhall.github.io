@@ -154,7 +154,12 @@
 						"Content-Type": "application/json",
 					},
 					body: JSON.stringify(post),
-				}).then((result) => result.json()); // TODO .then prepend comment!!!
+				})
+					.then((result) => result.json())
+					.then((post) => {
+						const $post = $("<li></li>").text(`${post.content} - ${post.from}`);
+						$posts.prepend($post);
+					});
 
 			const appendPosts = async () => {
 				const {posts, cursor} = await getPosts($more.data("cursor"));
