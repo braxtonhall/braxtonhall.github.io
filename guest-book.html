@@ -146,9 +146,12 @@
 					.catch(() => ({posts: []}));
 
 			const submitPost = (post) =>
-				fetch({
-					url,
+				fetch(url, {
 					method: "POST",
+					headers: {
+						Accept: "application/json",
+						"Content-Type": "application/json",
+					},
 					body: JSON.stringify(post),
 				}).then((result) => result.json()); // TODO .then prepend comment!!!
 
