@@ -228,7 +228,7 @@
 						$element.attr("href", href);
 					}
 				});
-				$parent.find("audio, embed, iframe, img, input, script, source, track, video").each((_, element) => {
+				$parent.find("audio, embed, iframe, img, input, script, source, track").each((_, element) => {
 					const $element = $(element);
 					const src = resolveHref(relativeTo, $element.attr("src"));
 					$element.attr("src", src);
