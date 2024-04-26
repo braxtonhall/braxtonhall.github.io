@@ -1,5 +1,6 @@
 # home movie archive
 
+- [2024 april 25](./home-movies/24-04-25.md)
 - [2024 january 7](./home-movies/24-01-07.md)
 - [2023 may 31](./home-movies/23-05-31.md)
 - [2023 april 18](./home-movies/23-04-18.md)
