@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Star Trek Watch History</title>
+		<script src="https://d3js.org/d3.v7.min.js"></script>
+		<script src="https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js"></script>
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="https://unpkg.com/cal-heatmap/dist/plugins/Tooltip.min.js"></script>
+		<script src="https://unpkg.com/cal-heatmap/dist/plugins/CalendarLabel.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/cal-heatmap/dist/cal-heatmap.css" />
+		<style>
+			body {
+				margin: 50px auto;
+				max-width: 1000px;
+				position: relative;
+				text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.5);
+				text-rendering: optimizeLegibility;
+				font: 0.9em/1.3em Georgia, serif;
+				-webkit-font-smoothing: subpixel-antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			a,
+			a:visited,
+			a:hover {
+				color: blue;
+				text-shadow: 0 0 0.1px rgba(255, 0, 0, 0.5);
+			}
+
+			blockquote {
+				margin-inline-start: 5px;
+				margin-inline-end: 5px;
+				color: gray;
+			}
+
+			main {
+				display: none;
+				max-width: 500px;
+				margin: 0 20px;
+				margin-top: 25px;
+			}
+
+			h1,
+			h2,
+			h3,
+			li,
+			summary,
+			p {
+				font-weight: normal;
+				font-size: 13px;
+			}
+
+			summary {
+				font-style: italic;
+			}
+
+			header,
+			footer {
+				text-align: right;
+				margin: 0;
+				margin-right: 20px;
+			}
+
+			ul {
+				padding-inline-start: 12px;
+			}
+
+			ol {
+				padding-inline-start: 12px;
+			}
+
+			header li {
+				list-style: none;
+			}
+
+			@media only screen and (min-width: 600px) {
+				header,
+				footer {
+					position: absolute;
+					right: 0;
+				}
+
+				header {
+					top: 0;
+				}
+
+				footer {
+					bottom: 0;
+				}
+
+				main {
+					margin-top: 0;
+					margin-right: 200px;
+				}
+			}
+			header > * {
+				margin: 0;
+			}
+			main > h1:after {
+				content: " ";
+				display: block;
+				border: 0.1px solid lightgray;
+			}
+			img {
+				margin-bottom: 2em;
+				max-width: 100%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			code.language-eval,
+			code.language-style {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>star trek</h1>
+		<p>
+			i really like star trek. i started <a href="https://st.braxtonhall.ca">keeping track</a> right after i
+			finished tos, which would have added some green to 2022 and the first bit of 2023.
+		</p>
+		<div id="contains-calendars" style="width: 100%; overflow: scroll">
+			<div id="calendars"></div>
+		</div>
+		<script>
+			const calendars = document.getElementById("calendars");
+			void (async function () {
+				const episodes = await d3.csv(
+					"https://docs.google.com/spreadsheets/d/1NaLUipHe_Urd6mruBPDloQdYd38xll-BAJkcm4aSIYE/export?format=csv&gid=461958934"
+				);
+				const seenEpisodes = episodes.filter((episode) => episode.Seen.match(/\d+-\d+-\d+/));
+				const years = seenEpisodes.reduce(
+					(years, {Seen: seen}) => years.add(Number(seen.match(/\d\d\d\d/)[0])),
+					new Set()
+				);
+
+				const firstYear = Math.min(...years);
+				const lastYear = Math.max(...years);
+
+				for (let year = firstYear; year <= lastYear; year++) {
+					const calendarElement = document.createElement("div");
+
+					const cal = new CalHeatmap();
+					cal.paint(
+						{
+							itemSelector: calendarElement,
+							date: {
+								start: new Date(`${year}-01-01`),
+							},
+							rowLimit: 7,
+							range: 12,
+							domain: {type: "month", gutter: 4},
+							subDomain: {type: "ghDay"},
+							data: {
+								source: seenEpisodes,
+								x: "Seen",
+								groupY: "count",
+							},
+							scale: {
+								color: {
+									range: ["#aceebb", "#116329"],
+									interpolate: "hsl",
+									type: "pow",
+									domain: [1, 5],
+								},
+							},
+						},
+						[
+							[
+								Tooltip,
+								{
+									enabled: true,
+									text: (timestamp, value) => {
+										const episodes = value === 1 ? `1 episode` : `${value ?? 0} episodes`;
+										const date = new Date(timestamp).toDateString();
+										return `${episodes} on ${date}`;
+									},
+								},
+							],
+							[
+								CalendarLabel,
+								{
+									position: "left",
+									text: () => ["", "Mon", "", "Wed", "", "Fri", ""],
+									textAlign: "end",
+									width: 30,
+									padding: [0, 5, 0, 0],
+								},
+							],
+						]
+					);
+
+					calendars.append(calendarElement);
+				}
+			})();
+		</script>
+	</body>
+</html>
