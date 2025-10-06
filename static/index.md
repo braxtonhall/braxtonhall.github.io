@@ -7,6 +7,6 @@ if you're here looking for the _tenure tracks_ radio programme, it is on indefin
 - [secret dj archive](./secretdj.md)
 - [home movie archive](./home-movies.md)
 - [playlist archive](./playlists.md)
-- [star trek progress](http://st.braxtonhall.ca)
+- [star trek progress](./star-trek)
 - [selected projects](./projects.md)
 - [web rings](./rings.md)
