@@ -41,10 +41,8 @@
 			}
 
 			main {
-				display: none;
 				max-width: 500px;
-				margin: 0 20px;
-				margin-top: 25px;
+				margin: 25px 20px 0;
 			}
 
 			h1,
@@ -59,6 +57,16 @@
 
 			summary {
 				font-style: italic;
+			}
+
+			div#contains-calendars {
+				padding: 25px;
+				box-sizing: border-box;
+				width: 100%;
+				overflow: scroll;
+				#calendars {
+					width: fit-content;
+				}
 			}
 
 			header,
@@ -122,12 +130,14 @@
 		</style>
 	</head>
 	<body>
-		<h1>star trek</h1>
-		<p>
-			i really like star trek. i started <a href="https://st.braxtonhall.ca">keeping track</a> right after i
-			finished tos, which would have added some green to 2022 and the first bit of 2023.
-		</p>
-		<div id="contains-calendars" style="width: 100%; overflow: scroll">
+		<main>
+			<h1>star trek</h1>
+			<p>
+				i really like star trek. i started <a href="https://st.braxtonhall.ca">keeping track</a> right after i
+				finished tos, which would have added some green to 2022 and the first bit of 2023.
+			</p>
+		</main>
+		<div id="contains-calendars">
 			<div id="calendars"></div>
 		</div>
 		<script>
@@ -157,7 +167,7 @@
 							},
 							rowLimit: 7,
 							range: 12,
-							domain: {type: "month", gutter: 4},
+							domain: {type: "month", gutter: 2},
 							subDomain: {type: "ghDay"},
 							data: {
 								source: seenEpisodes,
