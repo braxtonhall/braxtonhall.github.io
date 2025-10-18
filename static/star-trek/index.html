@@ -123,9 +123,16 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
-			code.language-eval,
-			code.language-style {
-				display: none;
+			label {
+				cursor: pointer;
+				input {
+					display: none;
+				}
+				&:has(input:not(:checked)) {
+					cursor: pointer;
+					color: blue;
+					text-decoration: underline;
+				}
 			}
 		</style>
 	</head>
@@ -136,26 +143,108 @@
 				i really like star trek. i started <a href="https://st.braxtonhall.ca">keeping track</a> right after i
 				finished tos, which would have added some green to 2022 and the first bit of 2023.
 			</p>
+			<label>
+				<input id="all" type="radio" name="show" checked />
+				<span>all</span>
+			</label>
+			<label>
+				<input id="tos" type="radio" name="show" />
+				<span>tos</span>
+			</label>
+			<label>
+				<input id="tas" type="radio" name="show" />
+				<span>tas</span>
+			</label>
+			<label>
+				<input id="mov" type="radio" name="show" />
+				<span>movies</span>
+			</label>
+			<label>
+				<input id="tng" type="radio" name="show" />
+				<span>tng</span>
+			</label>
+			<label>
+				<input id="ds9" type="radio" name="show" />
+				<span>ds9</span>
+			</label>
+			<label>
+				<input id="voy" type="radio" name="show" />
+				<span>voy</span>
+			</label>
+			<label>
+				<input id="ent" type="radio" name="show" />
+				<span>ent</span>
+			</label>
+			<label>
+				<input id="ff" type="radio" name="show" />
+				<span>ff</span>
+			</label>
 		</main>
 		<div id="contains-calendars">
 			<div id="calendars"></div>
 		</div>
 		<script>
+			const inputs = document.getElementsByTagName("input");
 			const calendars = document.getElementById("calendars");
-			void (async function () {
-				const episodes = await d3.csv(
+
+			const colours = {
+				all: ["#aceebb", "#116329"],
+				tos: ["#fff2cc", "#fccb3c"],
+				tas: ["#fce5cd", "#fa9b37"],
+				mov: ["#aceebb", "#116329"],
+				tng: ["#c9daf8", "#2e5fb6"],
+				ds9: ["#d9d2e9", "#6032cb"],
+				voy: ["#f4cccc", "#e53636"],
+				ent: ["#d9ead3", "#429b22"],
+				ff: ["#999999", "#151515"],
+			};
+
+			const futureEpisodes = d3
+				.csv(
 					"https://docs.google.com/spreadsheets/d/1NaLUipHe_Urd6mruBPDloQdYd38xll-BAJkcm4aSIYE/export?format=csv&gid=461958934"
-				);
-				const seenEpisodes = episodes.filter((episode) => episode.Seen.match(/\d+-\d+-\d+/));
-				const years = seenEpisodes.reduce(
+				)
+				.then((episodes) => episodes.filter((episode) => episode.Seen.match(/\d+-\d+-\d+/)));
+
+			const getRange = async () => {
+				const episodes = await futureEpisodes;
+				const years = episodes.reduce(
 					(years, {Seen: seen}) => years.add(Number(seen.match(/\d\d\d\d/)[0])),
 					new Set()
 				);
-
 				const firstYear = Math.min(...years);
 				const lastYear = Math.max(...years);
+				return {low: firstYear, high: lastYear};
+			};
 
-				for (let year = firstYear; year <= lastYear; year++) {
+			const getEpisodes = async (filter) => {
+				const episodes = await futureEpisodes;
+				if (filter === "all") {
+					return {episodes, unit: "show", colours: colours[filter]};
+				} else if (filter === "mov") {
+					const shows = new Set(Array.from(inputs).map((input) => input.id.toUpperCase()));
+					return {
+						episodes: episodes.filter((episode) => !shows.has(episode.Series)),
+						unit: "movie",
+						colours: colours[filter],
+					};
+				} else {
+					const series = filter.toUpperCase();
+					return {
+						episodes: episodes.filter((episode) => episode.Series === series),
+						unit: "episode",
+						colours: colours[filter],
+					};
+				}
+			};
+
+			const setShowFilter = async (filter) => setEpisodes(await getEpisodes(filter));
+
+			const setEpisodes = async ({episodes, unit, colours}) => {
+				calendars.innerHTML = "";
+				const range = await getRange();
+				for (let year = range.low; year <= range.high; year++) {
+					const label = document.createElement("span");
+					label.innerText = String(year);
 					const calendarElement = document.createElement("div");
 
 					const cal = new CalHeatmap();
@@ -170,13 +259,13 @@
 							domain: {type: "month", gutter: 2},
 							subDomain: {type: "ghDay"},
 							data: {
-								source: seenEpisodes,
+								source: episodes,
 								x: "Seen",
 								groupY: "count",
 							},
 							scale: {
 								color: {
-									range: ["#aceebb", "#116329"],
+									range: colours,
 									interpolate: "hsl",
 									type: "pow",
 									domain: [1, 5],
@@ -189,7 +278,7 @@
 								{
 									enabled: true,
 									text: (timestamp, value) => {
-										const episodes = value === 1 ? `1 episode` : `${value ?? 0} episodes`;
+										const episodes = value === 1 ? `1 ${unit}` : `${value ?? 0} ${unit}s`;
 										const date = new Date(timestamp).toDateString();
 										return `${episodes} on ${date}`;
 									},
@@ -208,9 +297,14 @@
 						]
 					);
 
-					calendars.append(calendarElement);
+					calendars.append(label, calendarElement);
 				}
-			})();
+			};
+
+			for (const input of inputs) {
+				input.addEventListener("click", () => setShowFilter(input.id));
+			}
+			setShowFilter("all");
 		</script>
 	</body>
 </html>
