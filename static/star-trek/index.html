@@ -133,14 +133,114 @@
 					text-decoration: underline;
 				}
 			}
+
+			.tos,
+			.tas,
+			.mov,
+			.tng,
+			.ds9,
+			.voy,
+			.ent,
+			.ff,
+			div.all {
+				display: none;
+			}
+
+			body:has(#all:checked) {
+				tr.tos,
+				tr.tas,
+				tr.mov,
+				tr.tng,
+				tr.ds9,
+				tr.voy,
+				tr.ent,
+				tr.ff {
+					display: table-row;
+				}
+				div.all {
+					display: unset;
+				}
+			}
+
+			body:has(#tos:checked) {
+				tr.tos {
+					display: table-row;
+				}
+				div.tos {
+					display: unset;
+				}
+			}
+
+			body:has(#tas:checked) {
+				tr.tas {
+					display: table-row;
+				}
+				div.tas {
+					display: unset;
+				}
+			}
+
+			body:has(#mov:checked) {
+				tr.mov {
+					display: table-row;
+				}
+				div.mov {
+					display: unset;
+				}
+			}
+
+			body:has(#tng:checked) {
+				tr.tng {
+					display: table-row;
+				}
+				div.tng {
+					display: unset;
+				}
+			}
+
+			body:has(#ds9:checked) {
+				tr.ds9 {
+					display: table-row;
+				}
+				div.ds9 {
+					display: unset;
+				}
+			}
+
+			body:has(#voy:checked) {
+				tr.voy {
+					display: table-row;
+				}
+				div.voy {
+					display: unset;
+				}
+			}
+
+			body:has(#ent:checked) {
+				tr.ent {
+					display: table-row;
+				}
+				div.ent {
+					display: unset;
+				}
+			}
+
+			body:has(#ff:checked) {
+				tr.ff {
+					display: table-row;
+				}
+				div.ff {
+					display: unset;
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<main>
 			<h1>star trek</h1>
 			<p>
-				i really like star trek. i started <a href="https://st.braxtonhall.ca">keeping track</a> right after i
-				finished tos, which would have added some green to 2022 and the first bit of 2023.
+				i really like star trek. i started watching some time after 2022 april 21, and started
+				<a href="https://st.braxtonhall.ca">keeping track</a> right after i finished tos.
 			</p>
 			<label title="Star Trek">
 				<input id="all" type="radio" name="show" checked />
@@ -180,14 +280,17 @@
 			</label>
 		</main>
 		<div class="contains-oversized">
-			<div id="calendars"></div>
+			<div id="show-calendars"></div>
 		</div>
 		<div class="contains-oversized">
 			<table id="table"></table>
 		</div>
 		<script>
-			const inputs = document.getElementsByTagName("input");
-			const calendars = document.getElementById("calendars");
+			const URL =
+				"https://docs.google.com/spreadsheets/d/1NaLUipHe_Urd6mruBPDloQdYd38xll-BAJkcm4aSIYE/export?format=csv&gid=461958934";
+			const inputs = document.querySelectorAll('input[name="show"]');
+			const showCalendars = document.getElementById("show-calendars");
+			const table = document.getElementById("table");
 			const columns = ["Series", "Episode", "Name", "Stardate", "Airdate", "Seen"];
 			const colours = {
 				all: ["#aceebb", "#116329"],
@@ -200,16 +303,10 @@
 				ent: ["#d9ead3", "#429b22"],
 				ff: ["#999999", "#151515"],
 			};
-
-			const futureEpisodes = d3
-				.csv(
-					"https://docs.google.com/spreadsheets/d/1NaLUipHe_Urd6mruBPDloQdYd38xll-BAJkcm4aSIYE/export?format=csv&gid=461958934"
-				)
-				.then((episodes) => {
-					tabulate(episodes);
-					return episodes;
-				})
-				.then((episodes) => episodes.filter((episode) => episode.Seen.match(/\d+-\d+-\d+/)));
+			const shows = new Set();
+			for (const input of inputs) {
+				shows.add(input.id.toUpperCase());
+			}
 
 			const tabulate = (episodes) => {
 				const table = d3.select("table");
@@ -231,7 +328,13 @@
 					.data(episodes)
 					.enter()
 					.append("tr")
-					.attr("class", (episode) => episode.Series.toLowerCase());
+					.attr("class", (episode) => {
+						if (shows.has(episode.Series)) {
+							return episode.Series.toLowerCase();
+						} else {
+							return "mov";
+						}
+					});
 
 				// create a cell in each row for each column
 				rows.selectAll("td")
@@ -239,10 +342,15 @@
 					.enter()
 					.append("td")
 					.text(({value}) => value);
+
+				return episodes;
 			};
 
-			const getRange = async () => {
-				const episodes = await futureEpisodes;
+			const seen = (episodes) => episodes.filter((episode) => episode.Seen.match(/\d+-\d+-\d+/));
+
+			const futureEpisodes = d3.csv(URL).then(tabulate).then(seen);
+
+			const futureRange = futureEpisodes.then((episodes) => {
 				const years = episodes.reduce(
 					(years, {Seen: seen}) => years.add(Number(seen.match(/\d\d\d\d/)[0])),
 					new Set()
@@ -250,34 +358,37 @@
 				const firstYear = Math.min(...years);
 				const lastYear = Math.max(...years);
 				return {low: firstYear, high: lastYear};
-			};
+			});
 
-			const getEpisodes = async (filter) => {
+			const getEpisodes = async (show) => {
 				const episodes = await futureEpisodes;
-				if (filter === "all") {
-					return {episodes, unit: "show", colours: colours[filter]};
-				} else if (filter === "mov") {
-					const shows = new Set(Array.from(inputs).map((input) => input.id.toUpperCase()));
+				if (show === "all") {
+					return {episodes, unit: "show", colours: colours[show], show};
+				} else if (show === "mov") {
 					return {
 						episodes: episodes.filter((episode) => !shows.has(episode.Series)),
 						unit: "movie",
-						colours: colours[filter],
+						colours: colours[show],
+						show,
 					};
 				} else {
-					const series = filter.toUpperCase();
+					const series = show.toUpperCase();
 					return {
 						episodes: episodes.filter((episode) => episode.Series === series),
 						unit: "episode",
-						colours: colours[filter],
+						colours: colours[show],
+						show,
 					};
 				}
 			};
 
-			const setShowFilter = async (filter) => setEpisodes(await getEpisodes(filter));
+			const makeCalendarFor = async (show) => makeCalendar(await getEpisodes(show));
 
-			const setEpisodes = async ({episodes, unit, colours}) => {
-				calendars.innerHTML = "";
-				const range = await getRange();
+			const makeCalendar = async ({episodes, unit, colours, show}) => {
+				const calendars = document.createElement("div");
+				calendars.classList.add(show);
+
+				const range = await futureRange;
 				for (let year = range.low; year <= range.high; year++) {
 					const label = document.createElement("span");
 					label.innerText = String(year);
@@ -295,7 +406,7 @@
 							domain: {type: "month", gutter: 2},
 							subDomain: {type: "ghDay"},
 							data: {
-								source: episodes,
+								source: seen(episodes),
 								x: "Seen",
 								groupY: "count",
 							},
@@ -335,12 +446,14 @@
 
 					calendars.append(label, calendarElement);
 				}
+				return calendars;
 			};
 
-			for (const input of inputs) {
-				input.addEventListener("click", () => setShowFilter(input.id));
-			}
-			setShowFilter("all");
+			void (async function () {
+				for (const {id} of inputs) {
+					showCalendars.append(await makeCalendarFor(id));
+				}
+			})();
 		</script>
 	</body>
 </html>
